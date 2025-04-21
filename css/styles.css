@@ -68,7 +68,7 @@ header nav {
   align-items: center;
 }
 header nav h1 {
-  font-size: 3rem;
+  font-size: 2.5rem;
   font-weight: 700;
   color: var(--black);
 }
@@ -92,13 +92,13 @@ header .menu__nav {
 }
 header .menu__nav li {
   color: var(--white);
-  font-size: 3rem;
+  font-size: 2.5rem;
   text-transform: uppercase;
   font-weight: 700;
 }
 
 .menu__nav.active {
-  max-height: 200px;
+  max-height: 150px;
   opacity: 1;
 }
 
