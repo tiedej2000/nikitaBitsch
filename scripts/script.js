@@ -1,3 +1,8 @@
+document.addEventListener('mousemove', (e) => {
+    const cursor = document.getElementById('custom-cursor');
+    cursor.style.transform = `translate(${e.clientX}px, ${e.clientY}px)`;
+});
+
 let imageSet = [
     '../media/1.jpg',
     '../media/2.jpg',
@@ -54,25 +59,42 @@ document.addEventListener('click', (event) =>{
 })
 
 function changeCursor(event) {
-    const wrapper = document.querySelector('.image__wrapper')
+    const wrapper = document.querySelector('.image__wrapper');
+    const cursor = document.getElementById('custom-cursor');
+    const cursorX = event.clientX;
+    const viewportWidth = window.innerWidth;
 
-    if(wrapper.contains(event.target)){
-        const cursorX = event.clientX
-        const viewportWidth = window.innerWidth
-        const html = document.documentElement
-
+    if (wrapper.contains(event.target)) {      
         if (cursorX > viewportWidth / 2) {
-            html.style.cursor = "url('../media/cursor_right.png') 12 12, auto";
+            cursor.style.background = "url(../media/cursors/cursor_right.png)";
+            cursor.style.backgroundSize = "contain";
         } else {
-            html.style.cursor = "url('../media/cursor_left.png') 12 12, auto";
+            cursor.style.background = "url(../media/cursors/cursor_left.png)";
+            cursor.style.backgroundSize = "contain";
         }
-    } else{
-        document.documentElement.style.cursor = "url('../media/cursor.png') 12 12, auto";
-    } 
+    } else {
+        cursor.style.background = "url(../media/cursors/cursor.png)";
+        cursor.style.backgroundSize = "contain";
+    }
 }
+
+function toggleNavMenu () {
+    const nav = document.querySelector('.menu__nav')
+    const hamburgerMenu = document.querySelector('.menu__hamburger')
+
+    if(nav.classList.contains('active')){
+        nav.classList.remove('active')
+        hamburgerMenu.style.stroke = '#1E1E1E'
+    } else{
+        nav.classList.add('active')
+        hamburgerMenu.style.stroke = 'white'
+    }
+}
+
+const menuButton = document.querySelector('.menu__hamburger')
+menuButton.addEventListener('click', toggleNavMenu)
 
 
 showImage()
-document.addEventListener('mousemove', changeCursor, changeCursorNav);
-
+document.addEventListener('mousemove', changeCursor);
 

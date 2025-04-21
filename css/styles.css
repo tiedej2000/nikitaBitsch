@@ -30,7 +30,21 @@
 
 html {
   font-family: "GeneralSans", sans-serif;
-  cursor: url("../media/cursor.png") 12 12, auto;
+  cursor: none;
+}
+
+#custom-cursor {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  background: url(../media/cursors/cursor.png);
+  border-radius: 50%;
+  background-size: contain;
+  pointer-events: none;
+  mix-blend-mode: difference;
+  z-index: 9999;
 }
 
 a {
@@ -51,16 +65,22 @@ header {
 header nav {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 header nav h1 {
-  font-size: 2rem;
-  font-weight: 900;
+  font-size: 3rem;
+  font-weight: 700;
   color: var(--black);
+}
+header nav .menu__hamburger {
+  z-index: 1000;
+  stroke: var(--black);
 }
 header .menu__nav {
   width: 100vw;
   margin-left: -30px;
-  height: 150px;
+  max-height: 0;
+  opacity: 0;
   background-color: var(--black);
   position: fixed;
   top: 0;
@@ -68,6 +88,7 @@ header .menu__nav {
   padding: 30px;
   align-items: center;
   gap: 40px;
+  pointer-events: none;
 }
 header .menu__nav li {
   color: var(--white);
@@ -75,16 +96,16 @@ header .menu__nav li {
   text-transform: uppercase;
   font-weight: 700;
 }
-header .menu__nav li:hover {
-  cursor: url("../media/cursor.png") 12 12, auto;
-}
-header .menu__nav:hover {
-  cursor: url("../media/cursor_light.png") 12 12, auto;
+
+.menu__nav.active {
+  max-height: 200px;
+  opacity: 1;
 }
 
 .main__wrapper {
   width: 100vw;
   height: 100vh;
+  background-color: white;
 }
 
 .image__wrapper {
@@ -109,4 +130,7 @@ footer {
   position: fixed;
   bottom: 0;
   padding: 30px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
 }/*# sourceMappingURL=styles.css.map */
