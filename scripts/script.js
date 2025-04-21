@@ -4,13 +4,13 @@ document.addEventListener('mousemove', (e) => {
 });
 
 let imageSet = [
-    '../media/1.jpg',
-    '../media/2.jpg',
-    '../media/3.jpg',
-    '../media/4.jpg',
-    '../media/5.jpg',
-    '../media/6.jpg',  
-    '../media/7.jpg',  
+    './media/1.jpg',
+    './media/2.jpg',
+    './media/3.jpg',
+    './media/4.jpg',
+    './media/5.jpg',
+    './media/6.jpg',  
+    './media/7.jpg',  
 ];
 
 let currIndex = 0;
@@ -66,14 +66,14 @@ function changeCursor(event) {
 
     if (wrapper.contains(event.target)) {      
         if (cursorX > viewportWidth / 2) {
-            cursor.style.background = "url(../media/cursors/cursor_right.png)";
+            cursor.style.background = "url(./media/cursors/cursor_right.png)";
             cursor.style.backgroundSize = "contain";
         } else {
-            cursor.style.background = "url(../media/cursors/cursor_left.png)";
+            cursor.style.background = "url(./media/cursors/cursor_left.png)";
             cursor.style.backgroundSize = "contain";
         }
     } else {
-        cursor.style.background = "url(../media/cursors/cursor.png)";
+        cursor.style.background = "url(./media/cursors/cursor.png)";
         cursor.style.backgroundSize = "contain";
     }
 }
