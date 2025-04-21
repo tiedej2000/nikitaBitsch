@@ -53,10 +53,26 @@ document.addEventListener('click', (event) =>{
     
 })
 
+function changeCursor(event) {
+    const wrapper = document.querySelector('.image__wrapper')
 
-function nextCursor() {
-    
+    if(wrapper.contains(event.target)){
+        const cursorX = event.clientX
+        const viewportWidth = window.innerWidth
+        const html = document.documentElement
+
+        if (cursorX > viewportWidth / 2) {
+            html.style.cursor = "url('../media/cursor_right.png') 12 12, auto";
+        } else {
+            html.style.cursor = "url('../media/cursor_left.png') 12 12, auto";
+        }
+    } else{
+        document.documentElement.style.cursor = "url('../media/cursor.png') 12 12, auto";
+    } 
 }
 
+
 showImage()
+document.addEventListener('mousemove', changeCursor, changeCursorNav);
+
 
