@@ -66,10 +66,10 @@ function changeCursor(event) {
 
     if (wrapper.contains(event.target)) {      
         if (cursorX > viewportWidth / 2) {
-            cursor.style.background = "url(./media/cursors/cursor_right.png)";
+            cursor.style.background = "url(./media/cursors/cursor_right_alt.png)";
             cursor.style.backgroundSize = "contain";
         } else {
-            cursor.style.background = "url(./media/cursors/cursor_left.png)";
+            cursor.style.background = "url(./media/cursors/cursor_left_alt.png)";
             cursor.style.backgroundSize = "contain";
         }
     } else {
