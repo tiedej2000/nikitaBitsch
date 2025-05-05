@@ -4,21 +4,55 @@ document.addEventListener('mousemove', (e) => {
 });
 
 let imageSet = [
-    './media/1.jpg',
-    './media/2.jpg',
-    './media/3.jpg',
-    './media/4.jpg',
-    './media/5.jpg',
-    './media/6.jpg',  
-    './media/7.jpg',  
-];
+    {
+      src: './media/1.jpg',
+      title: 'untitled1',
+      year: '2010'
+    },
+    {
+      src: './media/2.jpg',
+      title: 'untitled2',
+      year: '2011'
+    },
+    {
+      src: './media/3.jpg',
+      title: 'untitled3',
+      year: '2012'
+    },
+    {
+      src: './media/4.jpg',
+      title: 'untitled4',
+      year: '2013'
+    },
+    {
+      src: './media/5.jpg',
+      title: 'untitled5',
+      year: '2014'
+    },
+    {
+      src: './media/6.jpg',
+      title: 'untitled6',
+      year: '2015'
+    },
+    {
+      src: './media/7.jpg',
+      title: 'untitled7',
+      year: '2017'
+    }
+  ];
 
 let currIndex = 0;
 
 function showImage(){
-    let imageDisplay = document.querySelector('.image__display img')
+    const imageDisplay = document.querySelector('.image__display img')
+    const imageTitle = document.getElementById('title')
+    const imageYear = document.getElementById('year')
 
-    imageDisplay.src = imageSet[currIndex]
+    const currentImage = imageSet[currIndex]
+
+    imageDisplay.src = currentImage.src
+    imageTitle.textContent = currentImage.title
+    imageYear.textContent = currentImage.year
 }
 
 function nextImage(){
