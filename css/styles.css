@@ -140,6 +140,34 @@ header .menu__nav li {
   font-size: 20px;
 }
 
+@keyframes rotateOutDown {
+  0% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+}
+@keyframes rotateInDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.animated-out {
+  animation: rotateOutDown 0.3s ease forwards;
+}
+
+.animated-in {
+  animation: rotateInDown 0.3s ease forwards;
+}
+
 footer {
   position: fixed;
   bottom: 0;

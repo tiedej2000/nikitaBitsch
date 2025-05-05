@@ -5,17 +5,12 @@ document.addEventListener('mousemove', (e) => {
 
 let imageSet = [
     {
-      src: './media/1.jpg',
-      title: 'untitled1',
-      year: '2010'
-    },
-    {
-      src: './media/2.jpg',
+      src: './media/3.jpg',
       title: 'untitled2',
       year: '2011'
     },
     {
-      src: './media/3.jpg',
+      src: './media/2.jpg',
       title: 'untitled3',
       year: '2012'
     },
@@ -43,6 +38,18 @@ let imageSet = [
 
 let currIndex = 0;
 
+function animateTextChange(element, textCont){
+
+    element.classList.remove('animated-in')
+    element.classList.add('animated-out')
+
+    setTimeout(()=>{
+        element.textContent = textCont
+        element.classList.remove('animated-out')
+        element.classList.add('animated-in')
+    },300)
+}
+
 function showImage(){
     const imageDisplay = document.querySelector('.image__display img')
     const imageTitle = document.getElementById('title')
@@ -51,8 +58,8 @@ function showImage(){
     const currentImage = imageSet[currIndex]
 
     imageDisplay.src = currentImage.src
-    imageTitle.textContent = currentImage.title
-    imageYear.textContent = currentImage.year
+    animateTextChange(imageTitle, currentImage.title)
+    animateTextChange(imageYear, currentImage.year)
 }
 
 function nextImage(){
