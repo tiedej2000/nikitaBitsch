@@ -130,7 +130,6 @@ header{
     .image__display{
         height: 100%;
         width: auto;
-        aspect-ratio: 3/2;
         img{
             object-fit: cover;
             height: 100%;
@@ -144,7 +143,6 @@ header{
         margin-top: 10px;
         font-size: 20px;
     }
-
 }
 
 // animation for title and year 

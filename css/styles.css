@@ -124,7 +124,6 @@ header .menu__nav li {
 .image__wrapper .image__display {
   height: 100%;
   width: auto;
-  aspect-ratio: 3/2;
 }
 .image__wrapper .image__display img {
   -o-object-fit: cover;

@@ -5,6 +5,11 @@ document.addEventListener('mousemove', (e) => {
 
 let imageSet = [
     {
+        src: './media/1.jpg',
+        title: 'untitled1',
+        year: '2010'
+      },
+    {
       src: './media/3.jpg',
       title: 'untitled2',
       year: '2011'
@@ -56,11 +61,21 @@ function showImage(){
     const imageYear = document.getElementById('year')
 
     const currentImage = imageSet[currIndex]
+    imageDisplay.onload = () => {
+        syncInfoWidth(); 
+    };
 
-    imageDisplay.src = currentImage.src
-    animateTextChange(imageTitle, currentImage.title)
-    animateTextChange(imageYear, currentImage.year)
+    setTimeout(()=>{
+
+        imageDisplay.src = currentImage.src
+        animateTextChange(imageTitle, currentImage.title)
+        animateTextChange(imageYear, currentImage.year)
+
+    },300)
+    
 }
+
+showImage()
 
 function nextImage(){
     if(currIndex === imageSet.length - 1){
@@ -84,6 +99,7 @@ function previousImage(){
     console.log(currIndex)
 }
 
+// change Cursor based on which half of the screen the cursor is
 document.addEventListener('click', (event) =>{
     const wrapper = document.querySelector('.image__wrapper');
     if(wrapper.contains(event.target)){
@@ -136,7 +152,7 @@ const menuButton = document.querySelector('.menu__hamburger')
 menuButton.addEventListener('click', toggleNavMenu)
 
 
-showImage()
+
 document.addEventListener('mousemove', changeCursor);
 
 
@@ -152,5 +168,5 @@ function syncInfoWidth() {
     }
 }
 
-window.addEventListener("load", syncInfoWidth);
+
 window.addEventListener("resize", syncInfoWidth);
