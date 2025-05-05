@@ -60,7 +60,7 @@ header {
   height: 120px;
   width: 100%;
   padding: 30px;
-  margin-bottom: 50px;
+  margin-bottom: 40px;
 }
 header nav {
   display: flex;
@@ -123,7 +123,8 @@ header .menu__nav li {
 }
 .image__wrapper .image__display {
   height: 100%;
-  width: 55vw;
+  width: auto;
+  aspect-ratio: 3/2;
 }
 .image__wrapper .image__display img {
   -o-object-fit: cover;
@@ -133,9 +134,7 @@ header .menu__nav li {
 }
 .image__wrapper .image__info {
   display: flex;
-  width: 55vw;
   justify-content: space-between;
-  align-items: center;
   margin-top: 10px;
   font-size: 20px;
 }

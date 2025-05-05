@@ -139,3 +139,18 @@ menuButton.addEventListener('click', toggleNavMenu)
 showImage()
 document.addEventListener('mousemove', changeCursor);
 
+
+
+// Infomartion Width dynamically changes based on width of Image
+function syncInfoWidth() {
+    const img = document.getElementById("mainImage");
+    const info = document.getElementById("imageInfo");
+
+    if (img && info) {
+        const imgWidth = img.clientWidth;
+        info.style.width = imgWidth + "px";
+    }
+}
+
+window.addEventListener("load", syncInfoWidth);
+window.addEventListener("resize", syncInfoWidth);

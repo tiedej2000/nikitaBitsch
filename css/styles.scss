@@ -65,7 +65,7 @@ header{
     height: 120px;
     width: 100%;
     padding: 30px;
-    margin-bottom: 50px;
+    margin-bottom: 40px;
 
     nav{
         display: flex;
@@ -129,7 +129,8 @@ header{
 
     .image__display{
         height: 100%;
-        width: 55vw;
+        width: auto;
+        aspect-ratio: 3/2;
         img{
             object-fit: cover;
             height: 100%;
@@ -139,9 +140,7 @@ header{
 
     .image__info{
         display: flex;
-        width: 55vw;
         justify-content: space-between;
-        align-items: center;
         margin-top: 10px;
         font-size: 20px;
     }
