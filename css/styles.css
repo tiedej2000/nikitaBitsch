@@ -134,7 +134,7 @@ header .menu__nav li {
 .image__wrapper .image__info {
   display: flex;
   justify-content: space-between;
-  margin-top: 10px;
+  margin-top: 20px;
   font-size: 20px;
 }
 
