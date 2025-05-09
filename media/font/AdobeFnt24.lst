@@ -1,0 +1,567 @@
+%!Adobe-FontList 1.24
+%Locale:0x407
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Type1
+FontName:GeneralSans-Bold
+FamilyName:General Sans
+StyleName:Bold
+FullName:General Sans Bold
+MenuName:General Sans
+StyleBits:2
+WritingScript:Roman
+OutlineFileName:C:\Users\TVSUser\Desktop\repos\nikitaBitsch\media\Font\GeneralSans_Complete\GeneralSans-Bold.otf
+DataFormat:sfntData
+UsesStandardEncoding:no
+isCFF:yes
+hasSVG:no
+hasCOLR:no
+VariableFontType:NonVariableFont
+FileLength:43260
+FileModTime:1746429998
+WeightClass:700
+WidthClass:5
+AngleClass:0
+NameArray:0,Win,1,General Sans
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Type1
+FontName:GeneralSans-BoldItalic
+FamilyName:General Sans
+StyleName:Bold Italic
+FullName:General Sans Bold Italic
+MenuName:General Sans
+StyleBits:3
+WritingScript:Roman
+OutlineFileName:C:\Users\TVSUser\Desktop\repos\nikitaBitsch\media\Font\GeneralSans_Complete\GeneralSans-BoldItalic.otf
+DataFormat:sfntData
+UsesStandardEncoding:no
+isCFF:yes
+hasSVG:no
+hasCOLR:no
+VariableFontType:NonVariableFont
+FileLength:45060
+FileModTime:1746429998
+WeightClass:700
+WidthClass:5
+AngleClass:1
+NameArray:0,Win,1,General Sans
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Type1
+FontName:GeneralSans-Extralight
+FamilyName:General Sans
+StyleName:Extralight
+FullName:General Sans Extralight
+MenuName:General Sans Extralight
+StyleBits:0
+WritingScript:Roman
+OutlineFileName:C:\Users\TVSUser\Desktop\repos\nikitaBitsch\media\Font\GeneralSans_Complete\GeneralSans-Extralight.otf
+DataFormat:sfntData
+UsesStandardEncoding:no
+isCFF:yes
+hasSVG:no
+hasCOLR:no
+VariableFontType:NonVariableFont
+FileLength:42364
+FileModTime:1746429998
+WeightClass:200
+WidthClass:5
+AngleClass:0
+NameArray:0,Win,1,General Sans Extralight
+NameArray:0,Win,16,General Sans
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Type1
+FontName:GeneralSans-ExtralightItalic
+FamilyName:General Sans
+StyleName:Extralight Italic
+FullName:General Sans Extralight Italic
+MenuName:General Sans Extralight Italic
+StyleBits:0
+WritingScript:Roman
+OutlineFileName:C:\Users\TVSUser\Desktop\repos\nikitaBitsch\media\Font\GeneralSans_Complete\GeneralSans-ExtralightItalic.otf
+DataFormat:sfntData
+UsesStandardEncoding:no
+isCFF:yes
+hasSVG:no
+hasCOLR:no
+VariableFontType:NonVariableFont
+FileLength:43232
+FileModTime:1746429998
+WeightClass:200
+WidthClass:5
+AngleClass:1
+NameArray:0,Win,1,General Sans Extralight Italic
+NameArray:0,Win,16,General Sans
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Type1
+FontName:GeneralSans-Italic
+FamilyName:General Sans
+StyleName:Italic
+FullName:General Sans Italic
+MenuName:General Sans
+StyleBits:1
+WritingScript:Roman
+OutlineFileName:C:\Users\TVSUser\Desktop\repos\nikitaBitsch\media\Font\GeneralSans_Complete\GeneralSans-Italic.otf
+DataFormat:sfntData
+UsesStandardEncoding:no
+isCFF:yes
+hasSVG:no
+hasCOLR:no
+VariableFontType:NonVariableFont
+FileLength:47952
+FileModTime:1746429998
+WeightClass:400
+WidthClass:5
+AngleClass:1
+NameArray:0,Win,1,General Sans
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Type1
+FontName:GeneralSans-Light
+FamilyName:General Sans
+StyleName:Light
+FullName:General Sans Light
+MenuName:General Sans Light
+StyleBits:0
+WritingScript:Roman
+OutlineFileName:C:\Users\TVSUser\Desktop\repos\nikitaBitsch\media\Font\GeneralSans_Complete\GeneralSans-Light.otf
+DataFormat:sfntData
+UsesStandardEncoding:no
+isCFF:yes
+hasSVG:no
+hasCOLR:no
+VariableFontType:NonVariableFont
+FileLength:46020
+FileModTime:1746429998
+WeightClass:300
+WidthClass:5
+AngleClass:0
+NameArray:0,Win,1,General Sans Light
+NameArray:0,Win,16,General Sans
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Type1
+FontName:GeneralSans-LightItalic
+FamilyName:General Sans
+StyleName:Light Italic
+FullName:General Sans Light Italic
+MenuName:General Sans Light Italic
+StyleBits:0
+WritingScript:Roman
+OutlineFileName:C:\Users\TVSUser\Desktop\repos\nikitaBitsch\media\Font\GeneralSans_Complete\GeneralSans-LightItalic.otf
+DataFormat:sfntData
+UsesStandardEncoding:no
+isCFF:yes
+hasSVG:no
+hasCOLR:no
+VariableFontType:NonVariableFont
+FileLength:47584
+FileModTime:1746429998
+WeightClass:300
+WidthClass:5
+AngleClass:1
+NameArray:0,Win,1,General Sans Light Italic
+NameArray:0,Win,16,General Sans
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Type1
+FontName:GeneralSans-Medium
+FamilyName:General Sans
+StyleName:Medium
+FullName:General Sans Medium
+MenuName:General Sans Medium
+StyleBits:0
+WritingScript:Roman
+OutlineFileName:C:\Users\TVSUser\Desktop\repos\nikitaBitsch\media\Font\GeneralSans_Complete\GeneralSans-Medium.otf
+DataFormat:sfntData
+UsesStandardEncoding:no
+isCFF:yes
+hasSVG:no
+hasCOLR:no
+VariableFontType:NonVariableFont
+FileLength:46424
+FileModTime:1746429998
+WeightClass:500
+WidthClass:5
+AngleClass:0
+NameArray:0,Win,1,General Sans Medium
+NameArray:0,Win,16,General Sans
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Type1
+FontName:GeneralSans-MediumItalic
+FamilyName:General Sans
+StyleName:Medium Italic
+FullName:General Sans Medium Italic
+MenuName:General Sans Medium Italic
+StyleBits:0
+WritingScript:Roman
+OutlineFileName:C:\Users\TVSUser\Desktop\repos\nikitaBitsch\media\Font\GeneralSans_Complete\GeneralSans-MediumItalic.otf
+DataFormat:sfntData
+UsesStandardEncoding:no
+isCFF:yes
+hasSVG:no
+hasCOLR:no
+VariableFontType:NonVariableFont
+FileLength:48504
+FileModTime:1746429998
+WeightClass:500
+WidthClass:5
+AngleClass:1
+NameArray:0,Win,1,General Sans Medium Italic
+NameArray:0,Win,16,General Sans
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Type1
+FontName:GeneralSans-Regular
+FamilyName:General Sans
+StyleName:Regular
+FullName:General Sans
+MenuName:General Sans
+StyleBits:0
+WritingScript:Roman
+OutlineFileName:C:\Users\TVSUser\Desktop\repos\nikitaBitsch\media\Font\GeneralSans_Complete\GeneralSans-Regular.otf
+DataFormat:sfntData
+UsesStandardEncoding:no
+isCFF:yes
+hasSVG:no
+hasCOLR:no
+VariableFontType:NonVariableFont
+FileLength:45948
+FileModTime:1746429998
+WeightClass:400
+WidthClass:5
+AngleClass:0
+NameArray:0,Win,1,General Sans
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Type1
+FontName:GeneralSans-Semibold
+FamilyName:General Sans
+StyleName:Semibold
+FullName:General Sans Semibold
+MenuName:General Sans Semibold
+StyleBits:0
+WritingScript:Roman
+OutlineFileName:C:\Users\TVSUser\Desktop\repos\nikitaBitsch\media\Font\GeneralSans_Complete\GeneralSans-Semibold.otf
+DataFormat:sfntData
+UsesStandardEncoding:no
+isCFF:yes
+hasSVG:no
+hasCOLR:no
+VariableFontType:NonVariableFont
+FileLength:46640
+FileModTime:1746429998
+WeightClass:600
+WidthClass:5
+AngleClass:0
+NameArray:0,Win,1,General Sans Semibold
+NameArray:0,Win,16,General Sans
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Type1
+FontName:GeneralSans-SemiboldItalic
+FamilyName:General Sans
+StyleName:Semibold Italic
+FullName:General Sans Semibold Italic
+MenuName:General Sans Semibold Italic
+StyleBits:0
+WritingScript:Roman
+OutlineFileName:C:\Users\TVSUser\Desktop\repos\nikitaBitsch\media\Font\GeneralSans_Complete\GeneralSans-SemiboldItalic.otf
+DataFormat:sfntData
+UsesStandardEncoding:no
+isCFF:yes
+hasSVG:no
+hasCOLR:no
+VariableFontType:NonVariableFont
+FileLength:48236
+FileModTime:1746429998
+WeightClass:600
+WidthClass:5
+AngleClass:1
+NameArray:0,Win,1,General Sans Semibold Italic
+NameArray:0,Win,16,General Sans
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Type1
+FontName:Satoshi-Black
+FamilyName:Satoshi
+StyleName:Black
+FullName:Satoshi Black
+MenuName:Satoshi Black
+StyleBits:0
+WritingScript:Roman
+OutlineFileName:C:\Users\TVSUser\Desktop\repos\nikitaBitsch\media\Font\Satoshi\Satoshi-Black.otf
+DataFormat:sfntData
+UsesStandardEncoding:no
+isCFF:yes
+hasSVG:no
+hasCOLR:no
+VariableFontType:NonVariableFont
+FileLength:46928
+FileModTime:1746429998
+WeightClass:900
+WidthClass:5
+AngleClass:0
+NameArray:0,Win,1,Satoshi Black
+NameArray:0,Win,16,Satoshi
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Type1
+FontName:Satoshi-BlackItalic
+FamilyName:Satoshi
+StyleName:Black Italic
+FullName:Satoshi Black Italic
+MenuName:Satoshi Black Italic
+StyleBits:0
+WritingScript:Roman
+OutlineFileName:C:\Users\TVSUser\Desktop\repos\nikitaBitsch\media\Font\Satoshi\Satoshi-BlackItalic.otf
+DataFormat:sfntData
+UsesStandardEncoding:no
+isCFF:yes
+hasSVG:no
+hasCOLR:no
+VariableFontType:NonVariableFont
+FileLength:47792
+FileModTime:1746429998
+WeightClass:900
+WidthClass:5
+AngleClass:1
+NameArray:0,Win,1,Satoshi Black Italic
+NameArray:0,Win,16,Satoshi
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Type1
+FontName:Satoshi-Bold
+FamilyName:Satoshi
+StyleName:Bold
+FullName:Satoshi Bold
+MenuName:Satoshi
+StyleBits:2
+WritingScript:Roman
+OutlineFileName:C:\Users\TVSUser\Desktop\repos\nikitaBitsch\media\Font\Satoshi\Satoshi-Bold.otf
+DataFormat:sfntData
+UsesStandardEncoding:no
+isCFF:yes
+hasSVG:no
+hasCOLR:no
+VariableFontType:NonVariableFont
+FileLength:49668
+FileModTime:1746429998
+WeightClass:700
+WidthClass:5
+AngleClass:0
+NameArray:0,Win,1,Satoshi
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Type1
+FontName:Satoshi-BoldItalic
+FamilyName:Satoshi
+StyleName:Bold Italic
+FullName:Satoshi Bold Italic
+MenuName:Satoshi
+StyleBits:3
+WritingScript:Roman
+OutlineFileName:C:\Users\TVSUser\Desktop\repos\nikitaBitsch\media\Font\Satoshi\Satoshi-BoldItalic.otf
+DataFormat:sfntData
+UsesStandardEncoding:no
+isCFF:yes
+hasSVG:no
+hasCOLR:no
+VariableFontType:NonVariableFont
+FileLength:51524
+FileModTime:1746429998
+WeightClass:700
+WidthClass:5
+AngleClass:1
+NameArray:0,Win,1,Satoshi
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Type1
+FontName:Satoshi-Italic
+FamilyName:Satoshi
+StyleName:Italic
+FullName:Satoshi Italic
+MenuName:Satoshi
+StyleBits:1
+WritingScript:Roman
+OutlineFileName:C:\Users\TVSUser\Desktop\repos\nikitaBitsch\media\Font\Satoshi\Satoshi-Italic.otf
+DataFormat:sfntData
+UsesStandardEncoding:no
+isCFF:yes
+hasSVG:no
+hasCOLR:no
+VariableFontType:NonVariableFont
+FileLength:51304
+FileModTime:1746429998
+WeightClass:400
+WidthClass:5
+AngleClass:1
+NameArray:0,Win,1,Satoshi
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Type1
+FontName:Satoshi-Light
+FamilyName:Satoshi
+StyleName:Light
+FullName:Satoshi Light
+MenuName:Satoshi Light
+StyleBits:0
+WritingScript:Roman
+OutlineFileName:C:\Users\TVSUser\Desktop\repos\nikitaBitsch\media\Font\Satoshi\Satoshi-Light.otf
+DataFormat:sfntData
+UsesStandardEncoding:no
+isCFF:yes
+hasSVG:no
+hasCOLR:no
+VariableFontType:NonVariableFont
+FileLength:45128
+FileModTime:1746429998
+WeightClass:300
+WidthClass:5
+AngleClass:0
+NameArray:0,Win,1,Satoshi Light
+NameArray:0,Win,16,Satoshi
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Type1
+FontName:Satoshi-LightItalic
+FamilyName:Satoshi
+StyleName:Light Italic
+FullName:Satoshi Light Italic
+MenuName:Satoshi Light Italic
+StyleBits:0
+WritingScript:Roman
+OutlineFileName:C:\Users\TVSUser\Desktop\repos\nikitaBitsch\media\Font\Satoshi\Satoshi-LightItalic.otf
+DataFormat:sfntData
+UsesStandardEncoding:no
+isCFF:yes
+hasSVG:no
+hasCOLR:no
+VariableFontType:NonVariableFont
+FileLength:46580
+FileModTime:1746429998
+WeightClass:300
+WidthClass:5
+AngleClass:1
+NameArray:0,Win,1,Satoshi Light Italic
+NameArray:0,Win,16,Satoshi
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Type1
+FontName:Satoshi-Medium
+FamilyName:Satoshi
+StyleName:Medium
+FullName:Satoshi Medium
+MenuName:Satoshi Medium
+StyleBits:0
+WritingScript:Roman
+OutlineFileName:C:\Users\TVSUser\Desktop\repos\nikitaBitsch\media\Font\Satoshi\Satoshi-Medium.otf
+DataFormat:sfntData
+UsesStandardEncoding:no
+isCFF:yes
+hasSVG:no
+hasCOLR:no
+VariableFontType:NonVariableFont
+FileLength:50352
+FileModTime:1746429998
+WeightClass:500
+WidthClass:5
+AngleClass:0
+NameArray:0,Win,1,Satoshi Medium
+NameArray:0,Win,16,Satoshi
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Type1
+FontName:Satoshi-MediumItalic
+FamilyName:Satoshi
+StyleName:Medium Italic
+FullName:Satoshi Medium Italic
+MenuName:Satoshi Medium Italic
+StyleBits:0
+WritingScript:Roman
+OutlineFileName:C:\Users\TVSUser\Desktop\repos\nikitaBitsch\media\Font\Satoshi\Satoshi-MediumItalic.otf
+DataFormat:sfntData
+UsesStandardEncoding:no
+isCFF:yes
+hasSVG:no
+hasCOLR:no
+VariableFontType:NonVariableFont
+FileLength:51500
+FileModTime:1746429998
+WeightClass:500
+WidthClass:5
+AngleClass:1
+NameArray:0,Win,1,Satoshi Medium Italic
+NameArray:0,Win,16,Satoshi
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Type1
+FontName:Satoshi-Regular
+FamilyName:Satoshi
+StyleName:Regular
+FullName:Satoshi
+MenuName:Satoshi
+StyleBits:0
+WritingScript:Roman
+OutlineFileName:C:\Users\TVSUser\Desktop\repos\nikitaBitsch\media\Font\Satoshi\Satoshi-Regular.otf
+DataFormat:sfntData
+UsesStandardEncoding:no
+isCFF:yes
+hasSVG:no
+hasCOLR:no
+VariableFontType:NonVariableFont
+FileLength:49560
+FileModTime:1746429998
+WeightClass:400
+WidthClass:5
+AngleClass:0
+NameArray:0,Win,1,Satoshi
+%EndFont
+

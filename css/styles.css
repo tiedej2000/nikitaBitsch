@@ -107,6 +107,7 @@ header .menu__nav li {
   width: 100vw;
   height: 100vh;
   background-color: white;
+  position: relative;
 }
 
 .image__wrapper {
@@ -120,6 +121,10 @@ header .menu__nav li {
      -moz-user-select: none;
           user-select: none;
   margin: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 .image__wrapper .image__display {
   height: 100%;
@@ -173,4 +178,46 @@ footer {
   width: 100%;
   display: flex;
   justify-content: space-between;
+}
+
+@media (max-width: 599px) {
+  header nav h1 {
+    font-size: 1.5rem;
+  }
+  header nav .menu__hamburger {
+    transform: scale(0.6);
+    z-index: 10001;
+  }
+  header .menu__nav {
+    height: 100vh;
+    flex-direction: column;
+  }
+  header .menu__nav.active {
+    max-height: 100vh;
+    z-index: 10000;
+  }
+  .image__wrapper {
+    height: auto;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .image__wrapper .image__display {
+    width: 95%;
+    max-width: 350px;
+    height: auto;
+  }
+  .image__wrapper .image__display img {
+    width: 100%;
+    height: auto;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  .image__wrapper .image__info {
+    font-size: 1rem;
+  }
+  footer {
+    font-size: 0.7rem;
+  }
 }/*# sourceMappingURL=styles.css.map */
