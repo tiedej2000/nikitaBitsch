@@ -56,23 +56,21 @@ function animateTextChange(element, textCont){
 }
 
 function showImage(){
-    const imageDisplay = document.querySelector('.image__display img')
+    const currImageEL = document.getElementById('currImage')
     const imageTitle = document.getElementById('title')
     const imageYear = document.getElementById('year')
 
-    const currentImage = imageSet[currIndex]
-    imageDisplay.onload = () => {
-        syncInfoWidth(); 
+    const newImage = imageSet[currIndex];
+    currImageEL.src = newImage.src
+
+    currImageEL.onload = () => {
+        syncInfoWidth();
+
     };
 
-    setTimeout(()=>{
 
-        imageDisplay.src = currentImage.src
-        animateTextChange(imageTitle, currentImage.title)
-        animateTextChange(imageYear, currentImage.year)
-
-    },300)
-    
+    animateTextChange(imageTitle, newImage.title)
+    animateTextChange(imageYear, newImage.year)
 }
 
 showImage()
@@ -159,7 +157,7 @@ document.addEventListener('mousemove', changeCursor);
 
 // Infomartion Width dynamically changes based on width of Image
 function syncInfoWidth() {
-    const img = document.getElementById("mainImage");
+    const img = document.getElementById("currImage");
     const info = document.getElementById("imageInfo");
 
     if (img && info) {
@@ -168,5 +166,30 @@ function syncInfoWidth() {
     }
 }
 
-
 window.addEventListener("resize", syncInfoWidth);
+
+// Initialize the first image
+document.addEventListener('DOMContentLoaded', () => {
+    console.log('DOM loaded, initializing first image');
+    const currImageEL = document.getElementById('currImage');
+    const nextImageEL = document.getElementById('nextImage');
+    
+    // Set initial image
+    currImageEL.src = imageSet[0].src;
+    console.log('Setting initial image:', imageSet[0].src);
+    currImageEL.style.opacity = 1;
+    
+    // Set initial text
+    document.getElementById('title').textContent = imageSet[0].title;
+    document.getElementById('year').textContent = imageSet[0].year;
+    
+    // Sync width after image loads
+    currImageEL.onload = () => {
+        console.log('Initial image loaded successfully');
+        syncInfoWidth();
+    };
+
+    currImageEL.onerror = () => {
+        console.error('Error loading initial image:', imageSet[0].src);
+    };
+});
