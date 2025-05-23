@@ -91,7 +91,7 @@ header .menu__nav li {
 .main__wrapper {
   width: 100vw;
   height: 100vh;
-  background-color: black;
+  background-color: var(--black);
   position: relative;
 }
 
