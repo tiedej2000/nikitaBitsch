@@ -78,8 +78,8 @@ header{
         padding: 30px;
         align-items: center;
         gap: 40px; 
-        li {
-            color: var(--white);
+        li a{
+            color: var(--black);
             font-size: 2.5rem;
             text-transform: uppercase;
             font-weight: 700;
@@ -96,15 +96,22 @@ header{
     width: 100vw;
     height: 100vh;
     background-color: var(--black);
-    position: relative;
+    overflow: hidden;
 }
 
-.information__wrapper{
-    padding: 30px;
+
+
+.about__section{
     display: flex;
-    flex-direction: column;
-    gap: 20px;
-    color: var(--white);
+    margin-bottom: 30px;
+
+    .information__wrapper{
+        width: 60vw;
+        padding: 30px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        color: var(--white);
 
     h1{
         margin-top: 60px;
@@ -116,5 +123,18 @@ header{
         display: flex;
         flex-direction: column;
         gap: 20px;
+    }
+
+    }
+
+    .image__wrapper{
+        width: 40vw;
+        height: 80vh;
+        display: flex; 
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
     }
 }
