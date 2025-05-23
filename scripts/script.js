@@ -5,39 +5,64 @@ document.addEventListener('mousemove', (e) => {
 
 let imageSet = [
     {
-        src: './media/1.jpg',
-        title: 'untitled1',
-        year: '2010'
+        src: './media/bilder/01.untitled-2024 (4).jpg',
+        title: 'untitled',
+        year: '2024'
       },
     {
-      src: './media/3.jpg',
-      title: 'untitled2',
-      year: '2011'
+      src: './media/bilder/02.untitled-2024 (3).jpg',
+      title: 'untitled',
+      year: '2024'
     },
     {
-      src: './media/2.jpg',
-      title: 'untitled3',
-      year: '2012'
+      src: './media/bilder/03.untitled-2024 (8).jpg',
+      title: 'untitled',
+      year: '2024'
     },
     {
-      src: './media/4.jpg',
-      title: 'untitled4',
-      year: '2013'
+      src: './media/bilder/04.identitätsfrage-2024.jpg',
+      title: 'identitätsfrage',
+      year: '2024'
     },
     {
-      src: './media/5.jpg',
-      title: 'untitled5',
-      year: '2014'
+      src: './media/bilder/05.späher-2024.jpg',
+      title: 'späher',
+      year: '2024'
     },
     {
-      src: './media/6.jpg',
-      title: 'untitled6',
-      year: '2015'
+      src: './media/bilder/06.untitled-2024 (2).jpg',
+      title: 'untitled',
+      year: '2024'
     },
     {
-      src: './media/7.jpg',
-      title: 'untitled7',
-      year: '2017'
+      src: './media/bilder/07.inferno-2024.jpg',
+      title: 'inferno',
+      year: '2024'
+    },
+    {
+      src: './media/bilder/08.untitled-2025.jpg',
+      title: 'untitled',
+      year: '2025'
+    },
+    {
+      src: './media/bilder/09.untitled-2024 (7).jpg',
+      title: 'untitled',
+      year: '2024'
+    },
+    {
+      src: './media/bilder/10.untitled-2024 (6).jpg',
+      title: 'untitled',
+      year: '2024'
+    },
+    {
+      src: './media/bilder/11.20-2023.jpg',
+      title: '20',
+      year: '2023'
+    },
+    {
+      src: './media/bilder/12.untitled-2024 (5).jpg',
+      title: 'untitled',
+      year: '2024'
     }
   ];
 

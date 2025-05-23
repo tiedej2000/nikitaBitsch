@@ -33,7 +33,7 @@
 }
 
 html {
-    font-family: 'GeneralSans', sans-serif;
+    font-family: "Manrope", sans-serif;
     cursor: none;
 }
 
@@ -55,6 +55,7 @@ html {
 a{
     text-decoration: none;
     color: var(--black);
+    cursor: none;
 }
 
 li{
@@ -66,6 +67,9 @@ header{
     width: 100%;
     padding: 30px;
     margin-bottom: 40px;
+    position: sticky;
+    top: 0px;
+    z-index: 888;
 
     nav{
         display: flex;
@@ -73,7 +77,7 @@ header{
         align-items: center;
         h1{
             font-size: 2.5rem;
-            font-weight: 700;
+            font-weight: 900;
             color: var(--black);
         }
 
@@ -96,7 +100,6 @@ header{
         padding: 30px;
         align-items: center;
         gap: 40px; 
-        pointer-events: none;   
         li {
             color: var(--white);
             font-size: 2.5rem;
