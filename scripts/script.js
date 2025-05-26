@@ -67,17 +67,30 @@ let imageSet = [
   ];
 
 let currIndex = 0;
+let isMovingForward = true; 
 
-function animateTextChange(element, textCont){
+function animateTextChange(element, newText){
+    if (element.textContent !== newText) {
+        if (isMovingForward) {
+            element.classList.remove('animated-in-up', 'animated-in-down')
+            element.classList.add('animated-out-down')
 
-    element.classList.remove('animated-in')
-    element.classList.add('animated-out')
+            setTimeout(()=>{
+                element.textContent = newText
+                element.classList.remove('animated-out-down')
+                element.classList.add('animated-in-down')
+            },300)
+        } else {
+            element.classList.remove('animated-in-up', 'animated-in-down')
+            element.classList.add('animated-out-up')
 
-    setTimeout(()=>{
-        element.textContent = textCont
-        element.classList.remove('animated-out')
-        element.classList.add('animated-in')
-    },300)
+            setTimeout(()=>{
+                element.textContent = newText
+                element.classList.remove('animated-out-up')
+                element.classList.add('animated-in-up')
+            },300)
+        }
+    }
 }
 
 function showImage(){
@@ -90,9 +103,7 @@ function showImage(){
 
     currImageEL.onload = () => {
         syncInfoWidth();
-
     };
-
 
     animateTextChange(imageTitle, newImage.title)
     animateTextChange(imageYear, newImage.year)
@@ -106,9 +117,8 @@ function nextImage(){
     } else{
         currIndex++
     }
-
+    isMovingForward = true
     showImage()
-    console.log(currIndex)
 }
 
 function previousImage(){
@@ -117,9 +127,8 @@ function previousImage(){
     } else{
         currIndex--
     }
-
+    isMovingForward = false
     showImage()
-    console.log(currIndex)
 }
 
 // change Cursor based on which half of the screen the cursor is
@@ -164,10 +173,8 @@ function toggleNavMenu () {
 
     if(nav.classList.contains('active')){
         nav.classList.remove('active')
-        hamburgerMenu.style.stroke = '#1E1E1E'
     } else{
         nav.classList.add('active')
-        hamburgerMenu.style.stroke = 'white'
     }
 }
 
