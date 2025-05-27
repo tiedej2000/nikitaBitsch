@@ -43,7 +43,7 @@ header {
   height: 120px;
   width: 100%;
   padding: 30px;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
   position: sticky;
   top: 0px;
   z-index: 888;
@@ -59,33 +59,72 @@ header nav h1 {
   color: var(--white);
 }
 header nav .menu__hamburger {
-  z-index: 1000;
+  z-index: 10000;
   stroke: var(--white);
   transform: scale(0.75);
+  position: relative;
+}
+header nav .menu__hamburger .menu-open {
+  display: none;
+}
+header nav .menu__hamburger .menu-closed {
+  display: block;
 }
 header .menu__nav {
-  width: 100vw;
-  margin-left: -30px;
+  width: 15vw;
   max-height: 0;
   opacity: 0;
-  background-color: var(--white);
-  position: fixed;
-  top: 0;
+  background-color: transparent;
+  position: absolute;
+  top: 120px;
+  right: 30px;
   display: flex;
-  padding: 30px;
-  align-items: center;
-  gap: 40px;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 30px;
+  transition: all 0.3s ease-in-out;
+  pointer-events: none;
+}
+header .menu__nav li {
+  transform: translateX(30px);
+  opacity: 0;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+header .menu__nav li:nth-child(1) {
+  transition-delay: 0.1s;
+}
+header .menu__nav li:nth-child(2) {
+  transition-delay: 0.2s;
+}
+header .menu__nav li:nth-child(3) {
+  transition-delay: 0.3s;
+}
+header .menu__nav li:nth-child(4) {
+  transition-delay: 0.4s;
 }
 header .menu__nav li a {
-  color: var(--black);
+  color: var(--white);
   font-size: 2.5rem;
   text-transform: uppercase;
   font-weight: 700;
+  display: inline-block;
+  text-align: right;
 }
 
 .menu__nav.active {
   max-height: 150px;
   opacity: 1;
+  pointer-events: all;
+}
+.menu__nav.active li {
+  transform: translateX(0);
+  opacity: 1;
+}
+.menu__nav.active ~ nav .menu__hamburger .menu-open {
+  display: block;
+}
+.menu__nav.active ~ nav .menu__hamburger .menu-closed {
+  display: none;
 }
 
 .main__wrapper {
@@ -121,6 +160,7 @@ header .menu__nav li a {
   width: 40vw;
   height: 80vh;
   display: flex;
+  margin-right: 200px;
 }
 .about__section .image__wrapper img {
   width: 100%;
@@ -137,4 +177,37 @@ footer {
   color: var(--white);
   display: flex;
   justify-content: space-between;
-}/*# sourceMappingURL=stylesAbout.css.map */
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  top: 0;
+  left: 0;
+}
+
+.contact__wrapper {
+  color: var(--white);
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 1024px) {
+  header nav h1 {
+    font-size: 1.5rem;
+  }
+  header nav .menu__hamburger {
+    transform: scale(0.6);
+    z-index: 10001;
+  }
+  header .menu__nav.active {
+    max-height: 100vh;
+  }
+  footer {
+    font-size: 0.7rem;
+  }
+}/*# sourceMappingURL=stylesPages.css.map */

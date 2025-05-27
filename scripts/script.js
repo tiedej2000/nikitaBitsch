@@ -1,7 +1,18 @@
-document.addEventListener('mousemove', (e) => {
-    const cursor = document.getElementById('custom-cursor');
-    cursor.style.transform = `translate(${e.clientX}px, ${e.clientY}px)`;
-});
+function isMobileDevice() {
+    return window.innerWidth <= 1024;
+}
+
+function initializeCursor() {
+    if (!isMobileDevice()) {
+        document.addEventListener('mousemove', (e) => {
+            const cursor = document.getElementById('custom-cursor');
+            cursor.style.transform = `translate(${e.clientX}px, ${e.clientY}px)`;
+        });
+        document.addEventListener('mousemove', changeCursor);
+    }
+}
+
+initializeCursor();
 
 let imageSet = [
     {
@@ -169,7 +180,6 @@ function changeCursor(event) {
 
 function toggleNavMenu () {
     const nav = document.querySelector('.menu__nav')
-    const hamburgerMenu = document.querySelector('.menu__hamburger')
 
     if(nav.classList.contains('active')){
         nav.classList.remove('active')
@@ -180,12 +190,6 @@ function toggleNavMenu () {
 
 const menuButton = document.querySelector('.menu__hamburger')
 menuButton.addEventListener('click', toggleNavMenu)
-
-
-
-document.addEventListener('mousemove', changeCursor);
-
-
 
 // Infomartion Width dynamically changes based on width of Image
 function syncInfoWidth() {
