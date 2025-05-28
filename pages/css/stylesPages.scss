@@ -107,6 +107,11 @@ header{
                 font-weight: 700;
                 display: inline-block;
                 text-align: right;
+                transition: transform 0.3s ease;
+
+                &:hover{
+                   transform: translateX(-10px); 
+                }
             }
         }
     }
@@ -124,10 +129,14 @@ header{
     & ~ nav .menu__hamburger {
         .menu-open {
             display: block;
+            opacity: 1;
+            transition: opacity 0.3s ease;
         }
 
         .menu-closed {
             display: none;
+            opacity: 0;
+            transition: opacity 0.3s ease;
         }
     }
 }
