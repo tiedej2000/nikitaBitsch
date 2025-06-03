@@ -26,4 +26,17 @@ function toggleNavMenu () {
 const menuButton = document.querySelector('.menu__hamburger')
 menuButton.addEventListener('click', toggleNavMenu)
 
-console.log('script-loaded')
+
+
+
+document.addEventListener('DOMContentLoaded', () => {
+    const loaderWrapper = document.querySelector('.main__wrapper');
+
+    if (loaderWrapper) {
+        loaderWrapper.classList.add('active');
+
+        setTimeout(() => {
+        loaderWrapper.classList.remove('active');
+        }, 1000); 
+    }
+});

@@ -1,5 +1,5 @@
 :root{
-    --black: #1E1E1E;
+    --black: #101010;
     --white: white;
 }
 
@@ -65,7 +65,6 @@ header{
     height: 120px;
     width: 100%;
     padding: 30px;
-    margin-bottom: 40px;
     position: sticky;
     top: 0px;
     z-index: 888;
@@ -97,12 +96,13 @@ header{
     }
 
     .menu__nav {
-        width: 15vw;
-        max-height: 0;
+        width: 150px;
+        height: 350px;
         opacity: 0;
         background-color: transparent;
         position: absolute;
-        top: 120px;
+        top: 50%;
+        transform: translateY(50%);
         right: 30px;
         display: flex;
         flex-direction: column;
@@ -113,7 +113,7 @@ header{
         li {
             transform: translateX(30px);
             opacity: 0;
-            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            transition: all 0.3s ease;
             
             &:nth-child(1) { transition-delay: 0.1s; }
             &:nth-child(2) { transition-delay: 0.2s; }
@@ -122,7 +122,7 @@ header{
 
             a {
                 color: var(--black);
-                font-size: 2.5rem;
+                font-size: 2rem;
                 text-transform: uppercase;
                 font-weight: 700;
                 display: inline-block;
@@ -138,7 +138,6 @@ header{
 }
 
 .menu__nav.active{
-    max-height: 150px;  
     opacity: 1;
     pointer-events: all;
     li {
@@ -160,8 +159,25 @@ header{
 .main__wrapper{
     width: 100vw;
     height: 100vh;
-    background-color: white;
+    background-color: var(--white);
     position: relative;
+
+    &::before{
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 0%;
+        background-color: var(--white);
+        mix-blend-mode: difference; 
+        z-index: 10000;
+        transition: height 0.6s ease;
+    }
+
+    &.active::before {
+        height: 100%;
+    }
 }
 
 .image__wrapper{
@@ -170,7 +186,7 @@ header{
     align-items: center;
     justify-content: center;
     width: 100%;
-    height: 70%;
+    height: 60vh;
     user-select: none;
     margin: auto;
     position: absolute;
@@ -182,7 +198,6 @@ header{
         pointer-events: none;
         height: 100%;
         width: auto;
-        position: relative;
         img{
             object-fit: cover;
             height: 100%;

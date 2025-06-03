@@ -16,15 +16,15 @@ initializeCursor();
 
 let imageSet = [
     {
-        src: './media/bilder/01.untitled-2024 (4).jpg',
-        title: 'untitled',
-        year: '2024'
-      },
-    {
       src: './media/bilder/02.untitled-2024 (3).jpg',
       title: 'untitled',
       year: '2024'
     },
+    {
+        src: './media/bilder/01.untitled-2024 (4).jpg',
+        title: 'untitled',
+        year: '2024'
+      },
     {
       src: './media/bilder/03.untitled-2024 (8).jpg',
       title: 'untitled',
@@ -217,5 +217,15 @@ document.addEventListener('DOMContentLoaded', () => {
     currImageEL.onload = () => {
         syncInfoWidth();
     };
+
+    const loaderWrapper = document.querySelector('.main__wrapper');
+
+    if (loaderWrapper) {
+        loaderWrapper.classList.add('active');
+
+        setTimeout(() => {
+        loaderWrapper.classList.remove('active');
+        }, 1000); // 2 seconds
+    }
 });
 
