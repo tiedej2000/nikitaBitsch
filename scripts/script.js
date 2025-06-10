@@ -156,8 +156,7 @@ document.addEventListener('click', (event) =>{
         } else{
             previousImage()
         }
-    }
-    
+    }    
 })
 
 function changeCursor(event) {
@@ -182,6 +181,7 @@ function changeCursor(event) {
 
 function toggleNavMenu () {
     const nav = document.querySelector('.menu__nav')
+    console.log('clicked the button')
 
     if(nav.classList.contains('active')){
         nav.classList.remove('active')
@@ -190,7 +190,7 @@ function toggleNavMenu () {
     }
 }
 
-const menuButton = document.querySelector('.menu__hamburger')
+const menuButton = document.querySelector('.hamburger-icon')
 menuButton.addEventListener('click', toggleNavMenu)
 
 // Infomation Width dynamically changes based on width of Image

@@ -23,7 +23,7 @@ function toggleNavMenu () {
     }
 }
 
-const menuButton = document.querySelector('.menu__hamburger')
+const menuButton = document.querySelector('.hamburger-icon')
 menuButton.addEventListener('click', toggleNavMenu)
 
 
