@@ -80,6 +80,8 @@ let imageSet = [
 let currIndex = 0;
 let isMovingForward = true; 
 
+//title and yearanimation and change
+
 function animateTextChange(element, newText){
     if (element.textContent !== newText) {
         if (isMovingForward) {
@@ -191,7 +193,7 @@ function toggleNavMenu () {
 const menuButton = document.querySelector('.menu__hamburger')
 menuButton.addEventListener('click', toggleNavMenu)
 
-// Infomartion Width dynamically changes based on width of Image
+// Infomation Width dynamically changes based on width of Image
 function syncInfoWidth() {
     const img = document.getElementById("currImage");
     const info = document.getElementById("imageInfo");

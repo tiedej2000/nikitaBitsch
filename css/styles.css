@@ -91,9 +91,9 @@ header .menu__nav {
   height: 350px;
   opacity: 0;
   background-color: transparent;
-  position: absolute;
+  position: fixed;
   top: 50%;
-  transform: translateY(50%);
+  transform: translateY(-50%);
   right: 30px;
   display: flex;
   flex-direction: column;
@@ -268,40 +268,60 @@ footer {
   justify-content: space-between;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 599px) {
+  #custom-cursor {
+    display: none;
+  }
+  html {
+    cursor: default;
+  }
+  header {
+    padding: 20px;
+  }
   header nav h1 {
     font-size: 1.5rem;
   }
-  header nav .menu__hamburger {
-    transform: scale(0.6);
-    z-index: 10001;
+  header .menu__nav {
+    width: 50vw;
+    height: 100vh;
+    justify-content: center;
+    background-color: var(--white);
+    right: -120px;
+    padding-right: 30px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
   }
-  header .menu__nav.active {
-    max-height: 100vh;
+  header .menu__nav li {
+    opacity: 1;
+    transform: none;
+  }
+  header .menu__nav li a {
+    font-size: 1.5rem;
+  }
+  header .menu__nav li a:hover {
+    transform: none;
+  }
+  .menu__nav.active {
+    right: 0px;
+  }
+  .menu__hamburger svg {
+    transform: scale(0.8);
+    padding: 0;
   }
   .image__wrapper {
+    width: 100vw;
     height: auto;
-    padding: 20px;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-  }
-  .image__wrapper .image__display {
-    width: 95%;
-    max-width: 350px;
-    height: auto;
+    padding: 0 20px;
   }
   .image__wrapper .image__display img {
-    width: 100%;
-    height: auto;
     -o-object-fit: contain;
        object-fit: contain;
   }
   .image__wrapper .image__info {
-    font-size: 1rem;
     margin-top: 10px;
+    font-size: 1rem;
   }
   footer {
+    padding: 20px;
     font-size: 0.7rem;
   }
 }/*# sourceMappingURL=styles.css.map */
