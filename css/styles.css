@@ -286,6 +286,10 @@ footer {
   html {
     cursor: default;
   }
+  .main__wrapper {
+    width: 100dvw;
+    height: 100dvh;
+  }
   header {
     padding: 20px;
   }
@@ -297,7 +301,7 @@ footer {
   }
   header .menu__nav {
     width: 50vw;
-    height: 100vh;
+    height: 100dvh;
     justify-content: center;
     background-color: var(--white);
     right: -120px;
@@ -322,7 +326,7 @@ footer {
     padding: 0;
   }
   .image__wrapper {
-    width: 100vw;
+    width: 100dvw;
     height: auto;
     padding: 0 20px;
   }
