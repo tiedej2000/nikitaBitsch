@@ -1,7 +1,9 @@
+// checks device
 function isMobileDevice() {
     return window.innerWidth <= 1024;
 }
 
+// custom cursor function that checks device
 function initializeCursor() {
     if (!isMobileDevice()) {
         document.addEventListener('mousemove', (e) => {
@@ -14,6 +16,7 @@ function initializeCursor() {
 
 initializeCursor();
 
+// gallery for images
 let imageSet = [
     {
       src: './media/bilder/02.untitled-2024 (3).jpg',
@@ -80,9 +83,10 @@ let imageSet = [
 let currIndex = 0;
 let isMovingForward = true; 
 
-//title and yearanimation and change
+//title and year animation
 
 function animateTextChange(element, newText){
+    // checks if text is different, only then changes
     if (element.textContent !== newText) {
         if (isMovingForward) {
             element.classList.remove('animated-in-up', 'animated-in-down')
@@ -106,6 +110,7 @@ function animateTextChange(element, newText){
     }
 }
 
+// sets current image, title and year - initalizes info width 
 function showImage(){
     const currImageEL = document.getElementById('currImage')
     const imageTitle = document.getElementById('title')
@@ -122,8 +127,8 @@ function showImage(){
     animateTextChange(imageYear, newImage.year)
 }
 
-showImage()
 
+// sets new image to next Image and plays forward animation for the text
 function nextImage(){
     if(currIndex === imageSet.length - 1){
         currIndex = 0
@@ -134,6 +139,7 @@ function nextImage(){
     showImage()
 }
 
+// sets new image to previous Image and plays forward animation for the text
 function previousImage(){
     if(currIndex === 0){
         currIndex = imageSet.length - 1
@@ -144,7 +150,7 @@ function previousImage(){
     showImage()
 }
 
-// change Cursor based on which half of the screen the cursor is
+// triggers functions for next and previous image based on where the cursor is(left side window/right side window)
 document.addEventListener('click', (event) =>{
     const wrapper = document.querySelector('.image__wrapper');
     if(wrapper.contains(event.target)){
@@ -159,6 +165,8 @@ document.addEventListener('click', (event) =>{
     }    
 })
 
+
+// change Cursor based on which half of the screen the cursor is
 function changeCursor(event) {
     const wrapper = document.querySelector('.image__wrapper');
     const cursor = document.getElementById('custom-cursor');
@@ -179,6 +187,7 @@ function changeCursor(event) {
     }
 }
 
+// opens the menu bar
 function toggleNavMenu () {
     const nav = document.querySelector('.menu__nav')
     console.log('clicked the button')
@@ -193,7 +202,7 @@ function toggleNavMenu () {
 const menuButton = document.querySelector('.hamburger-icon')
 menuButton.addEventListener('click', toggleNavMenu)
 
-// Infomation Width dynamically changes based on width of Image
+// info width dynamically changes based on width of Image
 function syncInfoWidth() {
     const img = document.getElementById("currImage");
     const info = document.getElementById("imageInfo");
@@ -204,10 +213,12 @@ function syncInfoWidth() {
     }
 }
 
+//adjusts info when user resizes the window
 window.addEventListener("resize", syncInfoWidth);
 
+
 document.addEventListener('DOMContentLoaded', () => {
-    console.log('DOM loaded, initializing first image');
+    //loads first image
     const currImageEL = document.getElementById('currImage');
     
     currImageEL.src = imageSet[0].src;
@@ -220,6 +231,7 @@ document.addEventListener('DOMContentLoaded', () => {
         syncInfoWidth();
     };
 
+    // plays loading animation
     const loaderWrapper = document.querySelector('.main__wrapper');
 
     if (loaderWrapper) {
@@ -227,7 +239,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         setTimeout(() => {
         loaderWrapper.classList.remove('active');
-        }, 1000); // 2 seconds
+        }, 1000);
     }
 });
 
