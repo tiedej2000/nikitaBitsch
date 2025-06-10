@@ -362,7 +362,8 @@ footer{
         padding: 0 20px;
 
         .image__display img{
-            object-fit: contain;
+            object-fit: cover;
+            max-height: 50vh;
         }
 
         .image__info{
