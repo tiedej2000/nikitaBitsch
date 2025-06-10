@@ -279,7 +279,7 @@ footer {
   justify-content: space-between;
 }
 
-@media (max-width: 599px) {
+@media (max-width: 1023px) {
   #custom-cursor {
     display: none;
   }
