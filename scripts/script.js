@@ -221,7 +221,7 @@ function syncInfoWidth() {
     }
 
     function updateWidth() {
-        const imgWidth = img.clientWidth;
+        const imgWidth = img.getBoundingClientRect().width;
         info.style.width = imgWidth + "px";
     }
 }
