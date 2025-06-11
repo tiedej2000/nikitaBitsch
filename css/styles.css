@@ -201,6 +201,7 @@ header .menu__nav li a:hover {
   justify-content: space-between;
   margin-top: 20px;
   font-size: 20px;
+  will-change: width;
 }
 
 @keyframes moveOutDown {

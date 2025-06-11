@@ -153,6 +153,7 @@ function previousImage(){
 // triggers functions for next and previous image based on where the cursor is(left side window/right side window)
 document.addEventListener('click', (event) =>{
     const wrapper = document.querySelector('.image__wrapper');
+    const image = document.querySelector('.image__display img')
     if(wrapper.contains(event.target)){
         const clickX = event.clientX
         const viewportWidth = window.innerWidth

@@ -200,14 +200,15 @@ header{
             height: 100%;
             width: 100%;
         }
-        
     }
+
 
     .image__info{
         display: flex;
         justify-content: space-between;
         margin-top: 20px;
         font-size: 20px;
+        will-change: width;
     }
 }
 
