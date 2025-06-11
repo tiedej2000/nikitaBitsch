@@ -239,6 +239,9 @@ body {
   margin-bottom: 50px;
 }
 .contact__wrapper form input, .contact__wrapper form textarea {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
   padding: 5px;
   border-style: none;
   background-color: transparent;

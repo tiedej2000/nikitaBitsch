@@ -259,6 +259,9 @@ body{
         margin-bottom: 50px;
 
         input, textarea{
+            appearance: none;
+            -webkit-appearance: none;
+            -moz-appearance: none;
             padding: 5px;
             border-style: none;
             background-color: transparent;
