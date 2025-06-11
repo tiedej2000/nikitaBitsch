@@ -91,7 +91,7 @@ header{
         stroke-dasharray: 176;  
         stroke-dashoffset: 0;
         transition: stroke-dashoffset 0.3s ease;
-        transform-origin: right;
+        transform-origin: left;
     }
 
     .hamburger-icon.clicked .bottom-line {

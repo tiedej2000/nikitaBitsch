@@ -84,7 +84,7 @@ header .bottom-line, header .middle-line {
   stroke-dasharray: 176;
   stroke-dashoffset: 0;
   transition: stroke-dashoffset 0.3s ease;
-  transform-origin: right;
+  transform-origin: left;
 }
 header .hamburger-icon.clicked .bottom-line {
   stroke-dashoffset: -88;
