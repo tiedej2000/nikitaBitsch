@@ -57,34 +57,23 @@ header nav h1 {
   font-weight: 900;
   color: var(--white);
 }
-header .hamburger {
-  cursor: none;
-  z-index: 999;
+header .hamburger-icon {
+  width: 32px;
+  height: 32px;
+  overflow: hidden;
+  z-index: 9999;
 }
-header .hamburger input {
-  display: none;
+header .bottom-line, header .middle-line {
+  stroke-dasharray: 176;
+  stroke-dashoffset: 0;
+  transition: stroke-dashoffset 0.3s ease;
+  transform-origin: right;
 }
-header .hamburger svg {
-  height: 2.2em;
-  transition: transform 600ms cubic-bezier(0.4, 0, 0.2, 1);
+header .hamburger-icon.clicked .bottom-line {
+  stroke-dashoffset: -88;
 }
-header .line {
-  fill: none;
-  stroke: var(--white);
-  stroke-linecap: round;
-  stroke-linejoin: round;
-  stroke-width: 3;
-  transition: stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.2, 1), stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-header .line-top-bottom {
-  stroke-dasharray: 12 63;
-}
-header .hamburger input:checked + svg {
-  transform: rotate(-45deg);
-}
-header .hamburger input:checked + svg .line-top-bottom {
-  stroke-dasharray: 20 300;
-  stroke-dashoffset: -32.42;
+header .hamburger-icon.clicked .middle-line {
+  stroke-dashoffset: -40;
 }
 header .menu__nav {
   width: 150px;
@@ -308,11 +297,12 @@ body {
   header {
     padding: 20px;
   }
+  header .hamburger-icon {
+    width: 24px;
+    height: 24px;
+  }
   header nav h1 {
     font-size: 1.5rem;
-  }
-  header .hamburger svg {
-    height: 2em;
   }
   header .menu__nav {
     width: 50vw;
@@ -335,10 +325,6 @@ body {
   }
   .menu__nav.active {
     right: 0px;
-  }
-  .menu__hamburger svg {
-    transform: scale(0.8);
-    padding: 0;
   }
   .contact__wrapper form {
     width: 100vw;
