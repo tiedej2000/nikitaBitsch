@@ -212,39 +212,11 @@ function syncInfoWidth() {
     const img = document.getElementById("currImage");
     const info = document.getElementById("imageInfo");
 
-    if (!img || !info) return;
-
-    function updateWidth() {
-        const width = img.getBoundingClientRect().width;
-        if (width > 0) {
-            info.style.width = width + "px";
-        } else {
-            // Retry in case layout isn't ready on iOS
-            setTimeout(updateWidth, 100);
-        }
+    if (img && info) {
+        const imgWidth = img.clientWidth;
+        info.style.width = imgWidth + "px";
     }
-
-    // iOS often fails to trigger 'onload' for cached images
-    const observer = new IntersectionObserver((entries) => {
-        if (entries[0].isIntersecting) {
-            updateWidth();
-            observer.disconnect();
-        }
-    });
-
-    observer.observe(img);
-
-    // Double-safety: fallback triggers
-    if (img.complete && img.naturalWidth !== 0) {
-        setTimeout(updateWidth, 50); // Let layout settle
-    } else {
-        img.onload = () => setTimeout(updateWidth, 50);
-    }
-
-    window.addEventListener("resize", updateWidth);
-    window.addEventListener("orientationchange", updateWidth);
 }
-
 
 //adjusts info when user resizes the window
 window.addEventListener("resize", syncInfoWidth);
