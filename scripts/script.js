@@ -213,6 +213,14 @@ function syncInfoWidth() {
     const info = document.getElementById("imageInfo");
 
     if (img && info) {
+        if (img.complete) {
+            updateWidth();
+        } else {
+            img.onload = updateWidth;
+        }
+    }
+
+    function updateWidth() {
         const imgWidth = img.clientWidth;
         info.style.width = imgWidth + "px";
     }
