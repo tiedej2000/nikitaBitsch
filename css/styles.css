@@ -85,6 +85,7 @@ header .bottom-line, header .middle-line {
   stroke-dashoffset: 0;
   transition: stroke-dashoffset 0.3s ease;
   transform-origin: left;
+  will-change: stroke-dashoffset;
 }
 header .hamburger-icon.clicked .bottom-line {
   stroke-dashoffset: -88;
@@ -114,16 +115,16 @@ header .menu__nav li {
   transition: all 0.3s ease;
 }
 header .menu__nav li:nth-child(1) {
-  transition-delay: 0.1s;
-}
-header .menu__nav li:nth-child(2) {
   transition-delay: 0.2s;
 }
-header .menu__nav li:nth-child(3) {
+header .menu__nav li:nth-child(2) {
   transition-delay: 0.3s;
 }
-header .menu__nav li:nth-child(4) {
+header .menu__nav li:nth-child(3) {
   transition-delay: 0.4s;
+}
+header .menu__nav li:nth-child(4) {
+  transition-delay: 0.5s;
 }
 header .menu__nav li a {
   color: var(--black);
