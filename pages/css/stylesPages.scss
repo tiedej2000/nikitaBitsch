@@ -325,6 +325,11 @@ body{
         cursor: default;
     }
 
+    .main__wrapper{
+        width: 100dvw;
+        height: 100dvh;
+    }
+
     header{
         .hamburger-icon{
             width: 24px;

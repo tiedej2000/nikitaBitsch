@@ -298,6 +298,10 @@ body {
   html {
     cursor: default;
   }
+  .main__wrapper {
+    width: 100dvw;
+    height: 100dvh;
+  }
   header {
     padding: 20px;
   }
