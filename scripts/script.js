@@ -212,18 +212,34 @@ function syncInfoWidth() {
     const img = document.getElementById("currImage");
     const info = document.getElementById("imageInfo");
 
-    if (img && info) {
-        if (img.complete) {
-            updateWidth();
-        } else {
-            img.onload = updateWidth;
-        }
-    }
+    if (!img || !info) return;
 
     function updateWidth() {
-        const imgWidth = img.getBoundingClientRect().width;
-        info.style.width = imgWidth + "px";
+        // Wait until layout stabilizes
+        requestAnimationFrame(() => {
+            // Use getBoundingClientRect for best reliability
+            const imgWidth = img.getBoundingClientRect().width;
+            if (imgWidth > 0) {
+                info.style.width = imgWidth + "px";
+            } else {
+                // Retry if layout hasn’t finalized (iOS sometimes needs this)
+                setTimeout(updateWidth, 100);
+            }
+        });
     }
+
+    if (img.complete && img.naturalWidth !== 0) {
+        updateWidth();
+    } else {
+        img.onload = updateWidth;
+
+        // For iOS: also trigger a backup update in case onload fails
+        setTimeout(updateWidth, 300);
+    }
+
+    // Handle resizing/orientation changes
+    window.addEventListener("resize", updateWidth);
+    window.addEventListener("orientationchange", updateWidth);
 }
 
 //adjusts info when user resizes the window
