@@ -196,6 +196,9 @@ header .menu__nav li a:hover {
   height: 100%;
   width: 100%;
 }
+.image__wrapper .image__display img.active {
+  filter: grayscale(1);
+}
 .image__wrapper .image__info {
   display: flex;
   justify-content: space-between;

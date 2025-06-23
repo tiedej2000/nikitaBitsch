@@ -199,6 +199,10 @@ header{
             object-fit: contain;
             height: 100%;
             width: 100%;
+
+            &.active{
+                filter: grayscale(1);
+            }
         }
     }
 
