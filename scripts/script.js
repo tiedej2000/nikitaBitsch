@@ -17,71 +17,111 @@ function initializeCursor() {
 initializeCursor();
 
 // gallery for images
-let imageSet = [
-    {
-        src: './media/bilder/01.untitled-2024 (4).jpg',
-        title: 'untitled',
-        year: '2024'
-      },
-    {
-      src: './media/bilder/02.untitled-2024 (3).jpg',
-      title: 'untitled',
-      year: '2024'
-    },
-    {
-      src: './media/bilder/03.untitled-2024 (8).jpg',
-      title: 'untitled',
-      year: '2024'
-    },
-    {
-      src: './media/bilder/04.identitätsfrage-2024.jpg',
-      title: 'identitätsfrage',
-      year: '2024'
-    },
-    {
-      src: './media/bilder/05.späher-2024.jpg',
-      title: 'späher',
-      year: '2024'
-    },
-    {
-      src: './media/bilder/06.untitled-2024 (2).jpg',
-      title: 'untitled',
-      year: '2024'
-    },
-    {
-      src: './media/bilder/07.inferno-2024.jpg',
-      title: 'inferno',
-      year: '2024'
-    },
-    {
-      src: './media/bilder/08.untitled-2025.jpg',
-      title: 'untitled',
-      year: '2025'
-    },
-    {
-      src: './media/bilder/09.untitled-2024 (7).jpg',
-      title: 'untitled',
-      year: '2024'
-    },
-    {
-      src: './media/bilder/10.untitled-2024 (6).jpg',
-      title: 'untitled',
-      year: '2024'
-    },
-    {
-      src: './media/bilder/11.20-2023.jpg',
-      title: '20',
-      year: '2023'
-    },
-    {
-      src: './media/bilder/12.untitled-2024 (5).jpg',
-      title: 'untitled',
-      year: '2024'
+const imageSets = {
+    standard: [
+        {
+            src: './media/bilder/01.untitled-2024 (4).jpg',
+            title: 'untitled',
+            year: '2024'
+        },
+        {
+            src: './media/bilder/02.untitled-2024 (3).jpg',
+            title: 'untitled',
+            year: '2024'
+        },
+        {
+            src: './media/bilder/03.untitled-2024 (8).jpg',
+            title: 'untitled',
+            year: '2024'
+        },
+        {
+            src: './media/bilder/04.identitätsfrage-2024.jpg',
+            title: 'identitätsfrage',
+            year: '2024'
+        },
+        {
+            src: './media/bilder/05.späher-2024.jpg',
+            title: 'späher',
+            year: '2024'
+        },
+        {
+            src: './media/bilder/06.untitled-2024 (2).jpg',
+            title: 'untitled',
+            year: '2024'
+        },
+        {
+            src: './media/bilder/07.inferno-2024.jpg',
+            title: 'inferno',
+            year: '2024'
+        },
+        {
+            src: './media/bilder/08.untitled-2025.jpg',
+            title: 'untitled',
+            year: '2025'
+        },
+        {
+            src: './media/bilder/09.untitled-2024 (7).jpg',
+            title: 'untitled',
+            year: '2024'
+        },
+        {
+            src: './media/bilder/10.untitled-2024 (6).jpg',
+            title: 'untitled',
+            year: '2024'
+        },
+        {
+            src: './media/bilder/11.20-2023.jpg',
+            title: '20',
+            year: '2023'
+        },
+        {
+            src: './media/bilder/12.untitled-2024 (5).jpg',
+            title: 'untitled',
+            year: '2024'
+        }
+    ],
+    MFIRITS: [
+        {
+            src: './pages/media/MFIRITS/01.jpg',
+            title: '',
+            year: '01/42'
+        },
+        {
+            src: './pages/media/MFIRITS/02.jpg',
+            title: '',
+            year: '02/42'
+        },
+
+    ]
+};
+
+// Function to get the current image set name from localStorage, default to 'standard'
+function getCurrentImageSetName() {
+    let setName = localStorage.getItem('imageSet');
+    if (!setName || !imageSets[setName]) {
+        setName = 'standard';
+        localStorage.setItem('imageSet', setName);
     }
-  ];
+    return setName;
+}
+
+// Function to get the current image set array
+function getCurrentImageSet() {
+    return imageSets[getCurrentImageSetName()];
+}
+
+// Function to change the image set and reload
+function checkProject(setName) {
+    if (imageSets[setName]) {
+        localStorage.setItem('imageSet', setName);
+    } else {
+        console.warn('Image set not found:', setName);
+    }
+}
 
 let currIndex = 0;
-let isMovingForward = true; 
+let isMovingForward = true;
+let imageSet = getCurrentImageSet();
 
 //title and year animation
 
@@ -224,14 +264,12 @@ window.addEventListener("resize", syncInfoWidth);
 
 document.addEventListener('DOMContentLoaded', () => {
     //loads first image
+    imageSet = getCurrentImageSet(); // Ensure imageSet is up to date
     const currImageEL = document.getElementById('currImage');
-    
     currImageEL.src = imageSet[0].src;
     currImageEL.style.opacity = 1;
-    
     document.getElementById('title').textContent = imageSet[0].title;
     document.getElementById('year').textContent = imageSet[0].year;
-    
     currImageEL.onload = () => {
         syncInfoWidth();
     };

@@ -32,15 +32,7 @@ menuButton.addEventListener('click', () =>{
 
 
 
-
 document.addEventListener('DOMContentLoaded', () => {
-    const projectName = sessionStorage.getItem('selectedProject');
-
-    const imageSets = {
-        MFIRITS: [
-            '../media/MFIRITS/01.jpg'
-        ]
-    }
 
     // animation for when page loads
     const loaderWrapper = document.querySelector('.main__wrapper');
@@ -68,6 +60,7 @@ projectWrapper.addEventListener('wheel', (e) => {
 
 // projects
 
-function checkProject(name){
-    sessionStorage.setItem('selectedProject', name)
+function checkProject(setName) {
+    localStorage.setItem('imageSet', setName);
+    window.location.href = '../index.html';
 }
