@@ -330,6 +330,7 @@ footer {
     font-size: 1rem;
   }
   footer {
+    position: static;
     padding: 20px;
     font-size: 0.7rem;
   }
