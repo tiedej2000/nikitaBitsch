@@ -136,7 +136,6 @@ header .menu__nav li a:hover {
   width: 100vw;
   height: 100vh;
   background-color: var(--black);
-  overflow: hidden;
   position: relative;
 }
 .main__wrapper::before {
@@ -231,6 +230,55 @@ footer {
   display: flex;
   justify-content: space-between;
   padding-bottom: 10px;
+}
+
+.project__wrapper {
+  display: flex;
+  gap: 10px;
+  width: 100vw;
+  overflow-x: scroll;
+  height: 75vh;
+  padding: 0 30px;
+}
+.project__wrapper .project {
+  flex-shrink: 0;
+  width: 22.5vw;
+  height: 100%;
+  color: var(--white);
+  padding-right: 30px;
+}
+.project__wrapper .project .project__content {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.project__wrapper .project .project__content .heading {
+  font-size: 3.5rem;
+  font-weight: 700;
+}
+.project__wrapper .project .project__content .text {
+  line-height: 1.2;
+  margin-bottom: 10px;
+}
+.project__wrapper .project .project__content .preview {
+  width: 100%;
+  height: auto;
+}
+.project__wrapper .project .project__content .preview img {
+  width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.project__wrapper .project .project__content .link__button a {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.project__wrapper .project .project__content .link__button a svg {
+  fill: var(--white);
+  width: 20px;
+  height: auto;
 }
 
 body {

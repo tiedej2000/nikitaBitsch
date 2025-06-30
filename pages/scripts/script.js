@@ -34,6 +34,15 @@ menuButton.addEventListener('click', () =>{
 
 
 document.addEventListener('DOMContentLoaded', () => {
+    const projectName = sessionStorage.getItem('selectedProject');
+
+    const imageSets = {
+        MFIRITS: [
+            '../media/MFIRITS/01.jpg'
+        ]
+    }
+
+    // animation for when page loads
     const loaderWrapper = document.querySelector('.main__wrapper');
 
     if (loaderWrapper) {
@@ -44,3 +53,21 @@ document.addEventListener('DOMContentLoaded', () => {
         }, 1000); 
     }
 });
+
+
+
+const projectWrapper = document.querySelector('.project__wrapper');
+
+projectWrapper.addEventListener('wheel', (e) => {
+  if (e.deltaY !== 0) {
+    e.preventDefault() 
+    projectWrapper.scrollLeft += e.deltaY
+  }
+})
+
+
+// projects
+
+function checkProject(name){
+    sessionStorage.setItem('selectedProject', name)
+}
