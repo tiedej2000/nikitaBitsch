@@ -194,7 +194,6 @@ header .menu__nav li a:hover {
   -o-object-fit: contain;
      object-fit: contain;
   height: 100%;
-  width: 100%;
 }
 .image__wrapper .image__display img.active {
   filter: grayscale(1);

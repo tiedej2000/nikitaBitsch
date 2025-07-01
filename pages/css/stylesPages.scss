@@ -210,7 +210,8 @@ footer{
         padding-left: 30px;
 
         img{
-            height: 70vh;
+            height: auto;
+            max-height: 60vh;
             width: auto;
             object-fit: contain;
             margin-bottom: 20px;
@@ -218,7 +219,7 @@ footer{
 
         p{
             color: var(--white);
-
+            font-size: clamp(0.6rem, 1vw, 1.5rem);
             a{
                 text-decoration: underline;
             }
@@ -243,13 +244,14 @@ footer{
         h1{
             font-weight: normal;
             margin-bottom: 40px;
-            font-size: 1.1rem;
+            font-size: clamp(0.7rem,1.1vw,1.6rem);
         }
 
         ul{
             display: flex;
             flex-direction: column;
             gap: 15px;
+            font-size: clamp(0.6rem, 1vw, 1.5rem);
 
             li{
                 display: flex;
@@ -290,7 +292,7 @@ footer{
             gap: 10px;
 
             .heading{
-                font-size: 3.5rem;
+                font-size: clamp(1.5rem,2.5vw,3.5rem);
                 font-weight: 700;
             }
 
@@ -346,7 +348,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 150px;
+    margin-top: 10vh;
     form{
         display: flex;
         flex-direction: column;

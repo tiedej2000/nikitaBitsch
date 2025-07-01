@@ -196,7 +196,8 @@ footer {
   padding-left: 30px;
 }
 .about__content .image__wrapper img {
-  height: 70vh;
+  height: auto;
+  max-height: 60vh;
   width: auto;
   -o-object-fit: contain;
      object-fit: contain;
@@ -204,6 +205,7 @@ footer {
 }
 .about__content .image__wrapper p {
   color: var(--white);
+  font-size: clamp(0.6rem, 1vw, 1.5rem);
 }
 .about__content .image__wrapper p a {
   text-decoration: underline;
@@ -224,12 +226,13 @@ footer {
 .about__content .info__wrapper h1 {
   font-weight: normal;
   margin-bottom: 40px;
-  font-size: 1.1rem;
+  font-size: clamp(0.7rem, 1.1vw, 1.6rem);
 }
 .about__content .info__wrapper ul {
   display: flex;
   flex-direction: column;
   gap: 15px;
+  font-size: clamp(0.6rem, 1vw, 1.5rem);
 }
 .about__content .info__wrapper ul li {
   display: flex;
@@ -263,7 +266,7 @@ footer {
   gap: 10px;
 }
 .project__wrapper .project .project__content .heading {
-  font-size: 3.5rem;
+  font-size: clamp(1.5rem, 2.5vw, 3.5rem);
   font-weight: 700;
 }
 .project__wrapper .project .project__content .text {
@@ -306,7 +309,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 150px;
+  margin-top: 10vh;
 }
 .contact__wrapper form {
   display: flex;
