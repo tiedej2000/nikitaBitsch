@@ -262,6 +262,13 @@ footer{
     overflow-x: scroll;
     height: 75vh;
     padding: 0 30px;
+    will-change: scroll-position;
+
+    scrollbar-width: none;
+
+    &::-webkit-scrollbar{
+        display: none;
+    }
 
     .project{
         flex-shrink: 0;
@@ -293,6 +300,8 @@ footer{
                     width: 100%;
                     height: auto;
                     object-fit: cover;
+
+                    image-rendering: crisp-edges;
                 }
             }
 

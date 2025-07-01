@@ -239,6 +239,11 @@ footer {
   overflow-x: scroll;
   height: 75vh;
   padding: 0 30px;
+  will-change: scroll-position;
+  scrollbar-width: none;
+}
+.project__wrapper::-webkit-scrollbar {
+  display: none;
 }
 .project__wrapper .project {
   flex-shrink: 0;
@@ -269,6 +274,7 @@ footer {
   height: auto;
   -o-object-fit: cover;
      object-fit: cover;
+  image-rendering: crisp-edges;
 }
 .project__wrapper .project .project__content .link__button a {
   display: flex;

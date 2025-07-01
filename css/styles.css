@@ -206,6 +206,9 @@ header .menu__nav li a:hover {
   font-size: 20px;
   will-change: width;
 }
+.image__wrapper .projects {
+  justify-content: flex-end !important;
+}
 
 @keyframes moveOutDown {
   0% {

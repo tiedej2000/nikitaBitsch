@@ -214,6 +214,10 @@ header{
         font-size: 20px;
         will-change: width;
     }
+
+    .projects{
+        justify-content: flex-end !important;
+    }
 }
 
 // animation for title and year 

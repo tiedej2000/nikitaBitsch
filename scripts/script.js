@@ -20,78 +20,331 @@ initializeCursor();
 const imageSets = {
     standard: [
         {
-            src: './media/bilder/01.untitled-2024 (4).jpg',
-            title: 'untitled',
-            year: '2024'
-        },
-        {
-            src: './media/bilder/02.untitled-2024 (3).jpg',
-            title: 'untitled',
-            year: '2024'
-        },
-        {
-            src: './media/bilder/03.untitled-2024 (8).jpg',
-            title: 'untitled',
-            year: '2024'
-        },
-        {
-            src: './media/bilder/04.identitätsfrage-2024.jpg',
-            title: 'identitätsfrage',
-            year: '2024'
-        },
-        {
-            src: './media/bilder/05.späher-2024.jpg',
-            title: 'späher',
-            year: '2024'
-        },
-        {
-            src: './media/bilder/06.untitled-2024 (2).jpg',
-            title: 'untitled',
-            year: '2024'
-        },
-        {
-            src: './media/bilder/07.inferno-2024.jpg',
-            title: 'inferno',
-            year: '2024'
-        },
-        {
-            src: './media/bilder/08.untitled-2025.jpg',
-            title: 'untitled',
-            year: '2025'
-        },
-        {
-            src: './media/bilder/09.untitled-2024 (7).jpg',
-            title: 'untitled',
-            year: '2024'
-        },
-        {
-            src: './media/bilder/10.untitled-2024 (6).jpg',
-            title: 'untitled',
-            year: '2024'
-        },
-        {
-            src: './media/bilder/11.20-2023.jpg',
-            title: '20',
-            year: '2023'
-        },
-        {
-            src: './media/bilder/12.untitled-2024 (5).jpg',
-            title: 'untitled',
-            year: '2024'
-        }
+        src: './media/bilder/01.untitled-2024 (4).jpg',
+        title: 'untitled',
+        year: '2024',
+        alt: 'untitled 2024 image 01'
+    },
+    {
+        src: './media/bilder/02.untitled-2024 (3).jpg',
+        title: 'untitled',
+        year: '2024',
+        alt: 'untitled 2024 image 02'
+    },
+    {
+        src: './media/bilder/03.untitled-2024 (8).jpg',
+        title: 'untitled',
+        year: '2024',
+        alt: 'untitled 2024 image 03'
+    },
+    {
+        src: './media/bilder/04.identitätsfrage-2024.jpg',
+        title: 'identitätsfrage',
+        year: '2024',
+        alt: 'identitätsfrage 2024 image 04'
+    },
+    {
+        src: './media/bilder/05.späher-2024.jpg',
+        title: 'späher',
+        year: '2024',
+        alt: 'späher 2024 image 05'
+    },
+    {
+        src: './media/bilder/06.untitled-2024 (2).jpg',
+        title: 'untitled',
+        year: '2024',
+        alt: 'untitled 2024 image 06'
+    },
+    {
+        src: './media/bilder/07.inferno-2024.jpg',
+        title: 'inferno',
+        year: '2024',
+        alt: 'inferno 2024 image 07'
+    },
+    {
+        src: './media/bilder/08.untitled-2025.jpg',
+        title: 'untitled',
+        year: '2025',
+        alt: 'untitled 2025 image 08'
+    },
+    {
+        src: './media/bilder/09.untitled-2024 (7).jpg',
+        title: 'untitled',
+        year: '2024',
+        alt: 'untitled 2024 image 09'
+    },
+    {
+        src: './media/bilder/10.untitled-2024 (6).jpg',
+        title: 'untitled',
+        year: '2024',
+        alt: 'untitled 2024 image 10'
+    },
+    {
+        src: './media/bilder/11.20-2023.jpg',
+        title: '20',
+        year: '2023',
+        alt: '20 2023 image 11'
+    },
+    {
+        src: './media/bilder/12.untitled-2024 (5).jpg',
+        title: 'untitled',
+        year: '2024',
+        alt: 'untitled 2024 image 12'
+    }
     ],
     MFIRITS: [
-        {
-            src: './pages/media/MFIRITS/01.jpg',
-            title: '',
-            year: '01/42'
-        },
-        {
-            src: './pages/media/MFIRITS/02.jpg',
-            title: '',
-            year: '02/42'
-        },
-
+    {
+        src: './pages/media/MFIRITS/01.jpg',
+        title: '01',
+        year: '/42',
+        alt: 'MFIRITS image 01'
+    },
+    {
+        src: './pages/media/MFIRITS/02.jpg',
+        title: '02',
+        year: '/42',
+        alt: 'MFIRITS image 02'
+    },
+    {
+        src: './pages/media/MFIRITS/03.jpg',
+        title: '03',
+        year: '/42',
+        alt: 'MFIRITS image 03'
+    },
+    {
+        src: './pages/media/MFIRITS/04.jpg',
+        title: '04',
+        year: '/42',
+        alt: 'MFIRITS image 04'
+    },
+    {
+        src: './pages/media/MFIRITS/05.jpg',
+        title: '05',
+        year: '/42',
+        alt: 'MFIRITS image 05'
+    },
+    {
+        src: './pages/media/MFIRITS/06.jpg',
+        title: '06',
+        year: '/42',
+        alt: 'MFIRITS image 06'
+    },
+    {
+        src: './pages/media/MFIRITS/07.jpg',
+        title: '07',
+        year: '/42',
+        alt: 'MFIRITS image 07'
+    },
+    {
+        src: './pages/media/MFIRITS/08.jpg',
+        title: '08',
+        year: '/42',
+        alt: 'MFIRITS image 08'
+    },
+    {
+        src: './pages/media/MFIRITS/09.jpg',
+        title: '09',
+        year: '/42',
+        alt: 'MFIRITS image 09'
+    },
+    {
+        src: './pages/media/MFIRITS/10.jpg',
+        title: '10',
+        year: '/42',
+        alt: 'MFIRITS image 10'
+    },
+    {
+        src: './pages/media/MFIRITS/11.jpg',
+        title: '11',
+        year: '/42',
+        alt: 'MFIRITS image 11'
+    },
+    {
+        src: './pages/media/MFIRITS/12.jpg',
+        title: '12',
+        year: '/42',
+        alt: 'MFIRITS image 12'
+    },
+    {
+        src: './pages/media/MFIRITS/13.jpg',
+        title: '13',
+        year: '/42',
+        alt: 'MFIRITS image 13'
+    },
+    {
+        src: './pages/media/MFIRITS/14.jpg',
+        title: '14',
+        year: '/42',
+        alt: 'MFIRITS image 14'
+    },
+    {
+        src: './pages/media/MFIRITS/15.jpg',
+        title: '15',
+        year: '/42',
+        alt: 'MFIRITS image 15'
+    },
+    {
+        src: './pages/media/MFIRITS/16.jpg',
+        title: '16',
+        year: '/42',
+        alt: 'MFIRITS image 16'
+    },
+    {
+        src: './pages/media/MFIRITS/17.jpg',
+        title: '17',
+        year: '/42',
+        alt: 'MFIRITS image 17'
+    },
+    {
+        src: './pages/media/MFIRITS/18.jpg',
+        title: '18',
+        year: '/42',
+        alt: 'MFIRITS image 18'
+    },
+    {
+        src: './pages/media/MFIRITS/19.jpg',
+        title: '19',
+        year: '/42',
+        alt: 'MFIRITS image 19'
+    },
+    {
+        src: './pages/media/MFIRITS/20.jpg',
+        title: '20',
+        year: '/42',
+        alt: 'MFIRITS image 20'
+    },
+    {
+        src: './pages/media/MFIRITS/21.jpg',
+        title: '21',
+        year: '/42',
+        alt: 'MFIRITS image 21'
+    },
+    {
+        src: './pages/media/MFIRITS/22.jpg',
+        title: '22',
+        year: '/42',
+        alt: 'MFIRITS image 22'
+    },
+    {
+        src: './pages/media/MFIRITS/23.jpg',
+        title: '23',
+        year: '/42',
+        alt: 'MFIRITS image 23'
+    },
+    {
+        src: './pages/media/MFIRITS/24.jpg',
+        title: '24',
+        year: '/42',
+        alt: 'MFIRITS image 24'
+    },
+    {
+        src: './pages/media/MFIRITS/25.jpg',
+        title: '25',
+        year: '/42',
+        alt: 'MFIRITS image 25'
+    },
+    {
+        src: './pages/media/MFIRITS/26.jpg',
+        title: '26',
+        year: '/42',
+        alt: 'MFIRITS image 26'
+    },
+    {
+        src: './pages/media/MFIRITS/27.jpg',
+        title: '27',
+        year: '/42',
+        alt: 'MFIRITS image 27'
+    },
+    {
+        src: './pages/media/MFIRITS/28.jpg',
+        title: '28',
+        year: '/42',
+        alt: 'MFIRITS image 28'
+    },
+    {
+        src: './pages/media/MFIRITS/29.jpg',
+        title: '29',
+        year: '/42',
+        alt: 'MFIRITS image 29'
+    },
+    {
+        src: './pages/media/MFIRITS/30.jpg',
+        title: '30',
+        year: '/42',
+        alt: 'MFIRITS image 30'
+    },
+    {
+        src: './pages/media/MFIRITS/31.jpg',
+        title: '31',
+        year: '/42',
+        alt: 'MFIRITS image 31'
+    },
+    {
+        src: './pages/media/MFIRITS/32.jpg',
+        title: '32',
+        year: '/42',
+        alt: 'MFIRITS image 32'
+    },
+    {
+        src: './pages/media/MFIRITS/33.jpg',
+        title: '33',
+        year: '/42',
+        alt: 'MFIRITS image 33'
+    },
+    {
+        src: './pages/media/MFIRITS/34.jpg',
+        title: '34',
+        year: '/42',
+        alt: 'MFIRITS image 34'
+    },
+    {
+        src: './pages/media/MFIRITS/35.jpg',
+        title: '35',
+        year: '/42',
+        alt: 'MFIRITS image 35'
+    },
+    {
+        src: './pages/media/MFIRITS/36.jpg',
+        title: '36',
+        year: '/42',
+        alt: 'MFIRITS image 36'
+    },
+    {
+        src: './pages/media/MFIRITS/37.jpg',
+        title: '37',
+        year: '/42',
+        alt: 'MFIRITS image 37'
+    },
+    {
+        src: './pages/media/MFIRITS/38.jpg',
+        title: '38',
+        year: '/42',
+        alt: 'MFIRITS image 38'
+    },
+    {
+        src: './pages/media/MFIRITS/39.jpg',
+        title: '39',
+        year: '/42',
+        alt: 'MFIRITS image 39'
+    },
+    {
+        src: './pages/media/MFIRITS/40.jpg',
+        title: '40',
+        year: '/42',
+        alt: 'MFIRITS image 40'
+    },
+    {
+        src: './pages/media/MFIRITS/41.jpg',
+        title: '41',
+        year: '/42',
+        alt: 'MFIRITS image 41'
+    },
+    {
+        src: './pages/media/MFIRITS/42.jpg',
+        title: '42',
+        year: '/42',
+        alt: 'MFIRITS image 42'
+    }
     ]
 };
 
@@ -150,14 +403,31 @@ function animateTextChange(element, newText){
     }
 }
 
+// Helper to update 'projects' class on #imageInfo
+function updateImageInfoClass() {
+    const imageInfo = document.getElementById('imageInfo');
+    if (!imageInfo) return;
+    const setName = getCurrentImageSetName();
+    if (setName !== 'standard') {
+        imageInfo.classList.add('projects');
+    } else {
+        imageInfo.classList.remove('projects');
+    }
+}
+
 // sets current image, title and year - initalizes info width 
 function showImage(){
     const currImageEL = document.getElementById('currImage')
     const imageTitle = document.getElementById('title')
     const imageYear = document.getElementById('year')
+    const imageInfo = document.getElementById('imageInfo');
 
     const newImage = imageSet[currIndex];
     currImageEL.src = newImage.src
+    currImageEL.alt = newImage.alt
+
+    // Update 'projects' class
+    updateImageInfoClass();
 
     currImageEL.onload = () => {
         syncInfoWidth();
@@ -273,6 +543,9 @@ document.addEventListener('DOMContentLoaded', () => {
     currImageEL.onload = () => {
         syncInfoWidth();
     };
+
+    // Set 'projects' class before showing image
+    updateImageInfoClass();
 
     // plays loading animation
     const loaderWrapper = document.querySelector('.main__wrapper');
