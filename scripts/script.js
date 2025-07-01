@@ -565,5 +565,10 @@ document.addEventListener('DOMContentLoaded', () => {
              image.classList.remove('active')
         },1150)
     }
-});
 
+    // reset local storage 
+     if (!sessionStorage.getItem('sessionActive')) {
+        localStorage.clear(); // reset localStorage on new tab session
+        sessionStorage.setItem('sessionActive', 'true');
+    }
+});
