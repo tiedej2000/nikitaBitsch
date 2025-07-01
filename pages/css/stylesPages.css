@@ -378,6 +378,7 @@ body {
 }
 
 .footer-mobile {
+  display: none;
   margin-top: auto;
   color: white;
   height: 0;
