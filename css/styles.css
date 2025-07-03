@@ -326,6 +326,7 @@ footer {
     -o-object-fit: contain !important;
        object-fit: contain !important;
     max-height: 50vh;
+    width: 100%;
   }
   .image__wrapper .image__info {
     margin-top: 10px;
