@@ -477,7 +477,7 @@ document.addEventListener('click', (event) =>{
 })
 
 
-// change Cursor based on which half of the screen the cursor is
+// change Cursor based on which half of the screen the cursor is // test
 function changeCursor(event) {
     const wrapper = document.querySelector('.image__wrapper');
     const cursor = document.getElementById('custom-cursor');
