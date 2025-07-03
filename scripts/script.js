@@ -477,6 +477,8 @@ document.addEventListener('click', (event) =>{
 })
 
 
+
+
 // change Cursor based on which half of the screen the cursor is // test
 function changeCursor(event) {
     const wrapper = document.querySelector('.image__wrapper');
@@ -566,9 +568,16 @@ document.addEventListener('DOMContentLoaded', () => {
         },1150)
     }
 
-    // reset local storage 
-     if (!sessionStorage.getItem('sessionActive')) {
-        localStorage.clear(); // reset localStorage on new tab session
-        sessionStorage.setItem('sessionActive', 'true');
-    }
+    // info card for mobile
+
+    const infoCard = document.querySelector('.info__mobile')
+
+    setTimeout(()=>{
+        infoCard.classList.add('active')
+    },1500)
+
+    setTimeout(()=>{
+        infoCard.classList.remove('active')
+    },5000)
+
 });

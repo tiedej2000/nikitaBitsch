@@ -265,6 +265,21 @@ header .menu__nav li a:hover {
   animation: moveInUp 0.3s ease forwards;
 }
 
+.info__mobile {
+  visibility: none;
+  padding: 10px;
+  text-align: center;
+  position: fixed;
+  left: 5vw;
+  top: 75vh;
+  height: auto;
+  width: 90vw;
+  opacity: 0;
+  transform: translateY(20px);
+  border: 1px solid var(--black);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
 footer {
   position: fixed;
   bottom: 0;
@@ -331,6 +346,11 @@ footer {
   .image__wrapper .image__info {
     margin-top: 10px;
     font-size: 1rem;
+  }
+  .info__mobile.active {
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0px);
   }
   footer {
     padding: 20px;

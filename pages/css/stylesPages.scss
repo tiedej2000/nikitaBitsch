@@ -28,6 +28,7 @@ html {
     pointer-events: none;
     mix-blend-mode: difference; 
     z-index: 9999;
+    will-change: transform;
 }
   
 
@@ -342,7 +343,11 @@ footer{
                 border-radius: 2px;
                 display: grid;
                 place-content: center;
-            
+            }
+
+            .ph_button{
+                font-size: 1rem;
+                color: rgba(255, 255, 255, 0.2);
             }
 
 
