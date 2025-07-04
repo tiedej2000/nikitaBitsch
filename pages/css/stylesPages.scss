@@ -561,10 +561,21 @@ body{
 
             .project__content{
                 .heading{
-                    font-size: 2.2rem;
+                    font-size: clamp(1rem,7.5vw,2.5rem);
+                }
+
+                .ph_preview{
+                    height: 22.5vh;
+                }
+
+                .text{
+                    font-size: clamp(0.6rem,4vw, 1.5rem);
                 }
             }
+
+            
         }
+
     }
 
     // about
