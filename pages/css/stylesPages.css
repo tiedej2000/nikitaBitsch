@@ -494,6 +494,9 @@ body {
   .project__wrapper .project .project__content .ph_preview {
     height: 22.5vh;
   }
+  .project__wrapper .project .project__content .mobile {
+    display: none;
+  }
   .project__wrapper .project .project__content .text {
     font-size: clamp(0.6rem, 4vw, 1.5rem);
   }

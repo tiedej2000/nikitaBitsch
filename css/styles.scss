@@ -282,10 +282,12 @@ header{
 }
 
 .info__mobile{
-    visibility: none;
+    background: var(--white);
+    visibility: hidden;
     padding: 10px;
     text-align: center;
     position: fixed;
+    z-index: 299;
     left: 5vw;
     top: 75vh;
     height: auto;
@@ -370,7 +372,8 @@ footer{
         .image__display img{
             object-fit: contain !important;
             max-height: 50vh;
-            width: 100%;
+            width: auto;
+            max-width: 100%;
         }
 
         .image__info{
