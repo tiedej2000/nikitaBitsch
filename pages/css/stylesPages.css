@@ -207,6 +207,7 @@ footer {
 .about__content .image__wrapper p {
   color: var(--white);
   font-size: clamp(0.6rem, 1vw, 1.5rem);
+  line-height: 1.4;
 }
 .about__content .image__wrapper p a {
   text-decoration: underline;

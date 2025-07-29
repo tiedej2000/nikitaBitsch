@@ -221,6 +221,7 @@ footer{
         p{
             color: var(--white);
             font-size: clamp(0.6rem, 1vw, 1.5rem);
+            line-height: 1.4;
             a{
                 text-decoration: underline;
             }
